@@ -1,0 +1,49 @@
+.masthead
+{
+	padding-top: 150px;
+	background-color: #ccc;
+	color: white;
+	text-align: center;
+	padding-bottom: 100px;
+	min-height: 960px;
+}
+
+#about
+{
+	padding-top: 100px;
+	background-color: #e5e5e5;
+	min-height: 500px;
+}
+
+#grid-app
+{
+	padding-top: 100px;
+	background-color: #d5d5d5;
+	min-height: 720px;
+}
+
+#sobre
+{
+	padding-top: 100px;
+	min-height: 720px;
+}
+#video
+{
+	padding-top: 100px;
+	background-color: #696969;
+	min-height: 720px;
+}
+
+.footer-above
+{
+	padding: 100px 0 100px 0;
+	background: #252525;
+	color: white;
+}
+
+.footer-below
+{
+	padding: 20px;
+	background-color: #171717;
+	color: white;
+}
