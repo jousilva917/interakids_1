@@ -11,9 +11,8 @@
 |
 */
 Route::resource('home', 'homeController');
-/*
-Route::get('about', 'homeController@getAbout')->name('about');
-Route::get('contact', 'homeController@getContact')->name('contact');
-Route::get('explore', 'exploreController@getExplore')->name('explore');
-Route::get('learn', 'learnControllerr@getLearn')->name('learn');
-*/
+Route::get('/about', 'homeController@getAbout')->name('about');
+Route::get('/contact', 'homeController@getContact')->name('contact');
+Route::get('/explore', 'exploreController@getExplore')->name('explore');
+Route::get('/learn', 'learnControllerr@getLearn')->name('learn');
+
