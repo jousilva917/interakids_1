@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function(){
-    return redirect()->action('HomeController@index');
+    return redirect()->action('Home\HomeController@index');
 });
 Route::resource('home', 'HomeController');
 Route::resource('explore', 'ExploreController');
