@@ -9,21 +9,21 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="{{ route('home') }}">Home
+          <a class="nav-link" href="{{ url('home') }}">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('learn') }}">Aprenda</a>
+          <a class="nav-link" href="{{ url('learn') }}">Aprenda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('explore') }}">Explore</a>
+          <a class="nav-link" href="{{ url('explore') }}">Explore</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('about') }}">Sobre</a>
+          <a class="nav-link" href="{{ url('about') }}">Sobre</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ route('contact') }}">Contato</a>
+          <a class="nav-link" href="{{ url('contact') }}">Contato</a>
         </li>
   <form class="form-inline">
     <button class="btn btn-outline-success" type="button" >Login/Cadastro</button>
