@@ -10,4 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function(){
+    return redirect()->action('HomeController@index');
+});
 Route::resource('home', 'HomeController');
+Route::resource('explore', 'ExploreController');
+Route::resource('learn', 'LearnController');
