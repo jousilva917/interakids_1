@@ -1,10 +1,7 @@
-<!-- Bootstrap CSS -->
 <title>{{ config('app.name', 'InteraKids') }}</title>
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-<link rel="stylesheet" href="{{ asset('css/temp.css') }}">
+<link rel="stylesheet" href="{{ asset('css/blockly/style.css') }}">
 
-
-@include('partials.scripts')
-
+@include('partials.learnScripts')

@@ -13,7 +13,7 @@ class LearnController extends Controller
      */
     public function index()
     {
-        return view('website.learn');
+        return view('learn.index');
     }
 
     /**
