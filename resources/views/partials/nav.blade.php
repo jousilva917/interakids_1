@@ -16,13 +16,12 @@
 
           <!-- Right Side Of Navbar -->
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="{{ url('home') }}">Home
-                    <span class="sr-only">(current)</span>
+          <li class="{{Request::is('home') ? 'active': ''}}">
+                  <a class="nav-link" href="{{ action('HomeController@index') }}">Home
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url('learn') }}">Aprenda</a>
+                <li class="{{Request::is('aprenda') ? 'active': ''}}">
+                  <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Aprenda</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{ url('explore') }}">Explore</a>

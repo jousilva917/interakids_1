@@ -10,10 +10,7 @@ Route::get('/', function()
 });
 Route::get('/home', 'HomeController@index');
 
-Route::resource('explore', 'ExploreController');
-
-Route::resource('learn', 'LearnController');
-
+Route::get('/aprenda', 'LearnController@aprenda');
 
 //Sistema de cadastro
 Auth::routes();
