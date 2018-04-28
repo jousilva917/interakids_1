@@ -1,5 +1,7 @@
 <html>
-    @include('partials.learnHead')
+    <head>
+        @include('partials.learnHead')
+    </head>
     <body>
         @include('partials.nav')
         @yield('learn')
