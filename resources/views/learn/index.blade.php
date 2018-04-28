@@ -1,6 +1,4 @@
   @extends('layouts.learn')
-
-  @include('partials.learnStyles')
   @section('learn')
     <table class="mt-3" width="100%" height="100%">
       <tr>

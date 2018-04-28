@@ -2,9 +2,7 @@
 <html>
     @include('partials.head')
 	<body>
-    <!-- Navegação -->
     @include('partials.nav')
-
 		@yield('content')
     <header class="masthead">
     		    <div class="container">
