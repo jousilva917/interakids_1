@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -18,6 +19,7 @@ html[dir="RTL"] .farSide {
 }
 
 /* Buttons */
+
 button {
   margin: 5px;
   padding: 10px;
@@ -27,33 +29,42 @@ button {
   background-color: #eee;
   color: #000;
 }
+
 button.primary {
   border: 1px solid #dd4b39;
   background-color: #dd4b39;
   color: #fff;
 }
+
 button.primary>img {
   opacity: 1;
 }
+
 button>img {
   opacity: 0.6;
   vertical-align: text-bottom;
 }
+
 button:hover>img {
   opacity: 1;
 }
+
 button:active {
   border: 1px solid #888 !important;
 }
+
 button:hover {
   box-shadow: 2px 2px 5px #888;
 }
+
 button.disabled:hover>img {
   opacity: 0.6;
 }
+
 button.disabled {
   display: none;
 }
+
 button.notext {
   font-size: 10%;
 }
@@ -66,27 +77,33 @@ h1 {
 }
 
 /* Tabs */
+
 #tabRow>td {
   border: 1px solid #ccc;
   border-bottom: none;
 }
+
 td.tabon {
   border-bottom-color: #ddd !important;
   background-color: #ddd;
   padding: 5px 19px;
 }
+
 td.taboff {
   cursor: pointer;
   padding: 5px 19px;
 }
+
 td.taboff:hover {
   background-color: #eee;
 }
+
 td.tabmin {
   border-top-style: none !important;
   border-left-style: none !important;
   border-right-style: none !important;
 }
+
 td.tabmax {
   border-top-style: none !important;
   border-left-style: none !important;
@@ -96,21 +113,24 @@ td.tabmax {
   padding-right: 10px;
   text-align: right;
 }
+
 html[dir=rtl] td.tabmax {
   text-align: left;
 }
 
 table {
   border-collapse: collapse;
-  margin-top:  40px;
-  margin-bottom:  40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding: 30px;
   border: none;
 }
+
 td {
   padding: 0;
   vertical-align: top;
 }
+
 .content {
   visibility: hidden;
   margin: 0;
@@ -118,16 +138,20 @@ td {
   position: absolute;
   direction: ltr;
 }
+
 pre.content {
   border: 1px solid #ccc;
   overflow: scroll;
 }
+
 #content_blocks {
   padding: 0;
 }
+
 .blocklySvg {
   border-top: none !important;
 }
+
 #content_xml {
   resize: none;
   outline: none;
@@ -135,6 +159,7 @@ pre.content {
   font-family: monospace;
   overflow: scroll;
 }
+
 #languageMenu {
   vertical-align: top;
   margin-left: 15px;
@@ -143,23 +168,28 @@ pre.content {
 }
 
 /* Buttons */
+
 button {
   padding: 1px 10px;
   margin: 1px 5px;
 }
 
 /* Sprited icons. */
+
 .icon21 {
   height: 21px;
   width: 21px;
   background-image: url(/storage/blockly/media/icons.png);
 }
+
 .trash {
   background-position: 0px 0px;
 }
+
 .link {
   background-position: -21px 0px;
 }
+
 .run {
   background-position: -42px 0px;
 }

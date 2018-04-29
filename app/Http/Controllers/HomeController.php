@@ -27,6 +27,6 @@ class HomeController extends Controller
     }
     public function perfil()
     {
-        return view('perfil');
+        return view('learn.perfil');
     }
 }

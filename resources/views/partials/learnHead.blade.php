@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/blockly/style.css') }}">
 
-    <!-- Scripts --> 
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script> 
     <script src="{{asset('js/blockly/blockly_compressed.js')}}"></script>
     <script src="{{asset('js/blockly/blocks_compressed.js')}}"></script>
     <script src="{{asset('js/blockly/javascript_compressed.js')}}"></script>
