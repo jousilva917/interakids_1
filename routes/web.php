@@ -1,8 +1,10 @@
 <?php
 
 
-/*Route::namespace('Home')->group(function () {
-    // Controllers Within The "App\Http\Controllers\Home" Namespace*/
+/*Route::group(['namespace' => 'Home'], function () {
+    // Controllers Within The "App\Http\Controllers\Home" Namespace
+        return redirect()->action('HomeController@index');
+});*/
 
 Route::get('/', function()
 {
@@ -11,6 +13,8 @@ Route::get('/', function()
 Route::get('/home', 'HomeController@index');
 
 Route::get('/aprenda', 'LearnController@aprenda');
+
+Route::get('/task', 'LearnController@task');
 
 //Sistema de cadastro
 Auth::routes();

@@ -10,4 +10,8 @@ class LearnController extends Controller
     {
         return view('learn.index');
     }
+    public function task()
+    {
+        return view('learn.task1');
+    }
 }
