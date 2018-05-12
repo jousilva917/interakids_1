@@ -1,4 +1,5 @@
 <html>
+    @include('partials.head')
  <body>
     @include('partials.nav')
     @yield('sobre')

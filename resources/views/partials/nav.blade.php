@@ -23,11 +23,11 @@
                         <li class="{{Request::is('aprenda') ? 'active': ''}}">
                             <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Aprenda</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="{{Request::is('explore') ? 'active': ''}}">
                             <a class="nav-link" href="{{ url('explore') }}">Explore</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('about') }}">Sobre</a>
+                        <li class="{{Request::is('sobre') ? 'active': ''}}">
+                            <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('contact') }}">Contato</a>
