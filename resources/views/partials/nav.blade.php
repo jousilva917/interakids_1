@@ -29,8 +29,8 @@
                         <li class="{{Request::is('sobre') ? 'active': ''}}">
                             <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ url('contact') }}">Contato</a>
+                        <li class="{{Request::is('contato') ? 'active': ''}}">
+                            <a class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
                         </li>
                         <!-- Authentication Links -->
                         @guest

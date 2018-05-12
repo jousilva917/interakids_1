@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'sobre']]);
+        $this->middleware('auth', ['except' => ['index', 'sobre', 'contato']]);
     }
 
     /**
@@ -32,5 +32,9 @@ class HomeController extends Controller
     public function perfil()
     {
         return view('learn.perfil');
+    }
+    public function contato()
+    {
+        return view('website.contato');
     }
 }
