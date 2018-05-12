@@ -22,8 +22,6 @@
       background: url(https://www.elegantthemes.com/blog/wp-content/uploads/2017/07/programming-languages-to-learn-for-wordpress-featured-image.png) no-repeat 50% 50%;
       background-size: cover;
 }    
-
-as
 #about
 {
 	padding-top: 100px;
@@ -65,11 +63,7 @@ as
 }
 /*end-home*/
 /*navbar*/
-html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-}
+
  
 header {
       width: 100%;
@@ -97,33 +91,9 @@ header {
       font-size: 20px;
       letter-spacing: 2px;
 }
- 
-nav {
-      position: fixed;
-      width: 100%;
-      line-height: 60px;
-}
- 
-nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: #fff;
-      padding: 0;
-      text-align: right;
-      margin: 0;
-      padding-right: 40px;
-      transition: 1s;
-}
- 
-nav.black ul {
-      background: #000;
-}
- 
 nav ul li {
       display: inline-block;
-      padding: 16px 40px;;
+      padding: 10px 15px;;
 }
  
 nav ul li a {
