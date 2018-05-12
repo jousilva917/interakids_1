@@ -20,4 +20,4 @@ Route::get('/task', 'LearnController@task');
 Auth::routes();
 
 Route::get('/perfil', 'HomeController@perfil')->name('perfil');
-/*olá*/
+
