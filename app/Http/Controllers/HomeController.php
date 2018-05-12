@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace InteraKids\Http\Controllers;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index']]);
+        $this->middleware('auth', ['except' => ['index', 'sobre']]);
     }
 
     /**
@@ -24,6 +24,10 @@ class HomeController extends Controller
     public function index()
     {
         return view('website.home');
+    }
+    public function sobre()
+    {
+        return view('website.about');
     }
     public function perfil()
     {

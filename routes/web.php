@@ -11,9 +11,8 @@ Route::get('/', function()
     return redirect()->action('HomeController@index');
 });
 Route::get('/home', 'HomeController@index');
-
 Route::get('/aprenda', 'LearnController@aprenda');
-
+Route::get('/sobre', 'HomeController@sobre');
 Route::get('/task', 'LearnController@task');
 
 //Sistema de cadastro

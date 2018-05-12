@@ -1,13 +1,12 @@
 <html>
     @include('partials.head')
     <body>
-        @include('partials.nav')
         @yield('content')
-        <header class="masthead">
+        @include('partials.nav')
+        <header class="header">
             <div class="landing">
 
                <h1>Slider Principal</h1>
-                
             </div>
         </header>
 
