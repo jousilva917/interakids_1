@@ -8,6 +8,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ asset('css/temp.css') }}">
+<link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
 
 <!-- Scripts -->
 

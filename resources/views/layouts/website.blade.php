@@ -5,12 +5,10 @@
         @include('partials.nav')
         @yield('content')
         <header class="masthead">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Slider principal</h1>
-                    </div>
-                </div>
+            <div class="landing">
+
+               <h1>Slider Principal</h1>
+                
             </div>
         </header>
 
