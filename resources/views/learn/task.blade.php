@@ -19,7 +19,7 @@ $count = 12800;
 @endif
 @php 
 $stars = "";
-$i = 0;
+$i = 1;
 @endphp
 @while($i <= $lvl)
     @php $stars .= "&#9733;";
