@@ -1,12 +1,22 @@
 @extends('layouts.app')
+@include('partials.nav')
 
 @section('conteudo')
-<div class="container">
+<div class="card">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
 
+        <div class="col-md-8">
+            
+            <div class="card">
+                
+                <div class="card-header  ">{{ __('Login') }}
+                <p>
+                    <a href="" class="float-right btn btn-outline-dark">Sign up</a>
+		            <a href="" class="btn btn-outline-primary btn-lg"> <i class="fab fa-google"></i>   Login via Google</a>
+		            <a href="" class="btn btn-outline-secondary btn-lg"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+	            </p>
+                </div>
+                
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf

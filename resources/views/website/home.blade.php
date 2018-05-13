@@ -38,11 +38,9 @@
 <section id="sobre">
     <div class="container">
         <h1>sobre</h1>
-        <div class="row">
-            <div class="col-md-12">
-
-            </div>
-        </div>
+        <div class="container">
+			<div class="col-md-8 col-md-offset-2">
+				
     </div>
 </section>
 @endsection
