@@ -1,9 +1,8 @@
 @extends('layouts.perfil')
-
 @section('perfil')
 <h1>Blockly</h1>
 @php
-$username = "Jeremy";
+$username = Auth::user()->name; 
 $lvl = 1;
 $count = 12800;
 @endphp
@@ -25,8 +24,6 @@ $i = 1;
     @php $stars .= "&#9733;";
          $i++;
     @endphp
-
 @endwhile 
-{!! html_entity_decode("$stars <br> <b>$username</b> is level $lvl with $count experience points") !!}
-
+{!! html_entity_decode("$stars <br>  $username  is level $lvl with $count experience points") !!}
 @endsection
