@@ -25,5 +25,5 @@ $i = 1;
          $i++;
     @endphp
 @endwhile 
-{!! html_entity_decode("$stars <br>  $username  is level $lvl with $count experience points") !!}
+{!! html_entity_decode("$stars <br>  <b>$username</b>  está no nível $lvl com $count pontos de experiência") !!}
 @endsection
