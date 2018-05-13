@@ -12,7 +12,7 @@
         <legend>Contato</legend>
         
         <!-- Text input-->
-        <div class="form-group align-self-center ">
+        <div class="form-group ">
           <label class="col-md-4 control-label" for="txtinputnome">Nome</label>  
           <div class="col-md-8">
           <input id="txtinputnome" name="txtinputnome" placeholder="Escreva seu nome completo" class="form-control input-md" required="required" type="text" />
