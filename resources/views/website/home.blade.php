@@ -1,9 +1,15 @@
 @extends('layouts.website')
 @section('content')
+
 <header class="header">
     <div class="landing">
 
        <h1>Slider Principal</h1>
+
+         <div class="col-md-8">
+            <button id="btn" name="btn" class="btn btn-outline-primary btn-lg  ">Começar</button>
+          </div>
+
     </div>
 </header>
 

@@ -9,6 +9,17 @@
       color: #fff;
       
 }
+.header button{
+    width: 200px;
+    height: 60px;
+    margin-bottom:20px;
+    padding: 0 10px;
+    text-align: center;
+    position: relative;
+    float: bottom;
+    left:25%;
+}
+
 .about
 {
 	padding-top: 150px;
@@ -148,3 +159,44 @@ nav ul li a {
  
 }
 /*end-navbar*/
+
+/*Pagina contato*/
+#frmcontatoazul
+{
+    padding:100px;
+    width:700px;
+    
+}
+
+#frmcontatoazul fieldset
+{
+    border:1px double black;    
+    padding:10px;
+    border-radius:4px
+}
+
+#frmcontatoazul fieldset .form-group
+{
+    color: black;
+}
+
+#frmcontatoazul fieldset legend
+{
+    background-color: black;
+    color:#ffe;
+    padding:10px;    
+    margin:4px;
+    margin-bottom:20px;
+    border-radius:8px
+}
+
+#frmcontatoazul #singlebutton
+{
+    margin-top:20pt
+}
+
+#frmcontatoazul .help-block
+{
+      
+    display:none
+}
