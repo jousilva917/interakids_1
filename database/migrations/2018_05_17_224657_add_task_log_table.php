@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTaskTable extends Migration
+class AddTaskLogTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class AddTaskTable extends Migration
      */
     public function up()
     {
-        Schema::create('task', function(Blueprint $table){
+        Schema::create('task_log', function(Blueprint $table){
             $table->increments('id');
-            $table->string('nomeAula');
-            $table->timestamps();
-        });
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('aula_id')->unsigned();
+            $table->foreign('aula_id')->references('id')->on('task');
+    });
     }
 
     /**
@@ -27,6 +29,6 @@ class AddTaskTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('task');
+        Schema::dropIfExists('task_log');
     }
 }
