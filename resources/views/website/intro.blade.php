@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="{{ asset('css/intro.css') }}">
     <link rel="stylesheet" href="{{ asset('js/intro.js') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript">
 
-    $(function(){
-    var welcomeSection = $('.welcome-section'),
-    enterButton = welcomeSection.find('.enter-button');
-    
-    setTimeout(function(){
-        welcomeSection.removeClass('content-hidden');
-    
-    },800);
-    
-    enterButton.on('click', function(e){
-    e.preventDefault();
-    welcomeSection.addClass('content-hidden').fadeOut();
-    )};
+$(function(){
+var welcomeSection = $('.welcome-section'),
+enterButton = welcomeSection.find('.enter-button');
+
+setTimeout(function(){
+    welcomeSection.removeClass('content-hidden');
+
+},800);
+
+enterButton.on('click', function(e){
+e.preventDefault();
+welcomeSection.addClass('content-hidden').fadeOut();
+)};
 });
 
 </script>
