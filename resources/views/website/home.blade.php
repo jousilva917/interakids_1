@@ -1,15 +1,14 @@
 @extends('layouts.website')
 @section('content')
-
+<link rel="stylesheet" href="{{ asset('css/parallax.css') }}">
 <header class="header">
     <div class="landing">
-
-       <h1>Slider Principal</h1>
-
-         <div class="col-md-8">
-            <button id="btn" name="btn" class="btn btn-outline-primary btn-lg  ">Começar</button>
-          </div>
-
+    <section>
+	  <div id="layer_3" class="img-parallax"></div>
+	  <div id="layer_4" class="img-parallax"></div>
+	  <div id="layer_1" class="img-parallax"></div>
+	  <div id="layer_2" class="img-parallax"></div>
+	</section>
     </div>
 </header>
 
