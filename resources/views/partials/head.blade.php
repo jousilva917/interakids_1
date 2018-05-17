@@ -8,6 +8,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ asset('css/temp.css') }}">
+
 <link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
 
 <!-- Scripts -->
@@ -16,25 +17,21 @@
 
  <script type="text/javascript">
 
-// Menu-toggle button
+// Parallax
 
-$(document).ready(function() {
-      $(".menu-icon").on("click", function() {
-            $("nav ul").toggleClass("showing");
-      });
-});
-
-// Scrolling Effect
-
-$(window).on("scroll", function() {
-      if($(window).scrollTop()) {
-            $('nav').addClass('black');
-      }
-
-      else {
-            $('nav').removeClass('black');
-      }
-})
+function parallax(){
+			// Declarando as var.
+			var layer_1 = document.getElementById('layer_1');
+			var layer_2 = document.getElementById('layer_2');
+			var layer_3 = document.getElementById('layer_3');
+			var layer_4 = document.getElementById('layer_4');
+			// Aplicando a posição
+			layer_1.style.top = -(window.pageYOffset / 3) + 'px';
+			layer_2.style.top = -(window.pageYOffset / 6) + 'px';
+			layer_3.style.top = -(window.pageYOffset / 7) + 'px';
+			layer_4.style.top = -(window.pageYOffset / 7) + 'px';
+		}
+		window.addEventListener("scroll", parallax, false);
 
 
 </script>
