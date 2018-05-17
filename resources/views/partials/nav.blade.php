@@ -24,7 +24,7 @@
                             <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Aprenda</a>
                         </li>
                         <li class="{{Request::is('explore') ? 'active': ''}}">
-                            <a class="nav-link" href="{{ action('HomeController@explore') }}">Explore</a>
+                        <a class="nav-link" href="{{action('HomeController@explore')}}">Explore</a>
                         </li>
                         <li class="{{Request::is('sobre') ? 'active': ''}}">
                             <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>

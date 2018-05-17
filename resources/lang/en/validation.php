@@ -103,7 +103,8 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
-        ],
+        ], 'email' => ['unique' => 'O email já está cadastrado'],
+        'password' => ['confirmed' => 'A senha precisa ser igual']
     ],
 
     /*
