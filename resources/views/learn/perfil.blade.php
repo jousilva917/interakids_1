@@ -3,7 +3,6 @@
 @include('partials.perfilHead')
 
 @section('perfil')
-@extends('layouts.perfil')
 @php
 $lvl = Auth::user()->lvl;
 $username = Auth::user()->name;

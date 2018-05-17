@@ -14,7 +14,8 @@ class AddLvl extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('lvl')->default(0);
+            $table->Integer('lvl')->default(0);
+            $table->String('icone')->default('noimage.jpg');
         });
     }
 
@@ -27,6 +28,7 @@ class AddLvl extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('lvl');
+            $table->dropColumn('icone');
         });
     }
 }
