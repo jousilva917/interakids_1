@@ -37,8 +37,4 @@ class HomeController extends Controller
     {
         return view('website.contato');
     }
-    public function perfil()
-    {
-        return view('learn.perfil');
-    }
 }
