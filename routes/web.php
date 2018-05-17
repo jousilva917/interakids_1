@@ -20,5 +20,5 @@ Route::get('/task', 'LearnController@task');
 //Sistema de cadastro
 Auth::routes();
 
-Route::get('/perfil', 'HomeController@perfil')->name('perfil');
+Route::get('/perfil', 'LearnController@perfil')->name('perfil');
 

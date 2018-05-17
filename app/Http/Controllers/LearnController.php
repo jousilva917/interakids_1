@@ -17,4 +17,8 @@ class LearnController extends Controller
     public function task(){
         return view('learn.task');
     }
+    public function perfil()
+    {
+        return view('learn.perfil');
+    }
 }
