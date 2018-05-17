@@ -7,8 +7,7 @@
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-<link rel="stylesheet" href="{{ asset('css/temp.css') }}">
-<link rel="stylesheet" href="{{ asset('css/parallax.css') }}">
+<link rel="stylesheet" href="{{ asset('css/.css') }}">
 <link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
 
 <!-- Scripts -->
@@ -19,19 +18,26 @@
 
 // Parallax
 
-function parallax(){
-			// Declarando as var.
-			var layer_1 = document.getElementById('layer_1');
-			var layer_2 = document.getElementById('layer_2');
-			var layer_3 = document.getElementById('layer_3');
-			var layer_4 = document.getElementById('layer_4');
-			// Aplicando a posição
-			layer_1.style.top = -(window.pageYOffset / 3) + 'px';
-			layer_2.style.top = -(window.pageYOffset / 6) + 'px';
-			layer_3.style.top = -(window.pageYOffset / 7) + 'px';
-			layer_4.style.top = -(window.pageYOffset / 7) + 'px';
-		}
-		window.addEventListener("scroll", parallax, false);
+(function() {
+  
+  window.addEventListener('scroll', function(event) {
+    var depth, i, layer, layers, len, movement, topDistance, translate3d;
+    topDistance = this.pageYOffset;
+    layers = document.querySelectorAll("[data-type='parallax']");
+    for (i = 0, len = layers.length; i < len; i++) {
+      layer = layers[i];
+      depth = layer.getAttribute('data-depth');
+      movement = -(topDistance * depth);
+      translate3d = 'translate3d(0, ' + movement + 'px, 0)';
+      layer.style['-webkit-transform'] = translate3d;
+      layer.style['-moz-transform'] = translate3d;
+      layer.style['-ms-transform'] = translate3d;
+      layer.style['-o-transform'] = translate3d;
+      layer.style.transform = translate3d;
+    }
+  });
+
+}).call(this);
 
 
 </script>
