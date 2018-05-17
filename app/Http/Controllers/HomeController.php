@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'sobre', 'explore', 'contato']]);
+        $this->middleware('auth', ['except' => ['index', 'sobre', 'contato','intro']]);
     }
 
     /**
@@ -21,13 +21,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function intro()
+    {
+        return view('website.intro');
+    }
     public function index()
     {
         return view('website.home');
-    }
-    public function explore()
-    {
-        return view('website.explore');
     }
     public function sobre()
     {

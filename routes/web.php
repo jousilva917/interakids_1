@@ -6,10 +6,7 @@
         return redirect()->action('HomeController@index');
 });*/
 
-Route::get('/', function()
-{
-    return redirect()->action('HomeController@index');
-});
+Route::get('/', 'HomeController@intro');
 Route::get('/home', 'HomeController@index');
 Route::get('/aprenda', 'LearnController@aprenda');
 Route::get('/explore', 'HomeController@explore');
