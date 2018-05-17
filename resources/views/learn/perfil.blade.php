@@ -15,12 +15,7 @@ $i = 1;
     @endphp
 @endwhile 
 {!! html_entity_decode("$stars <br>  <b>$username</b>  está no nível $lvl") !!}
-<ul>
-    <li>
-    <a href="{{action('LearnController@task')}}"> Lição 1 </a>
-      </li>
-    <li>
-      <a  href=""> Lição 2 </a>
-    </li>
-  </ul>
+<div class="container mt-4">
+<a href="{{ action('LearnController@task') }}" class="btn btn-primary"> Lições </a>
+</div>
 @endsection
