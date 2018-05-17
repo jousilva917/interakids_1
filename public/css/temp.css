@@ -1,24 +1,4 @@
 /*home*/
-.header
-{
-	padding-top: 150px;
-
-	text-align: center;
-	padding-bottom: 100px;
-      min-height: 960px;
-      
-      
-}
-.header button{
-    width: 200px;
-    height: 60px;
-    margin-bottom:20px;
-    padding: 0 10px;
-    text-align: center;
-    position: relative;
-    float: bottom;
-    left:25%;
-}
 
 .about
 {
@@ -33,38 +13,7 @@
       background: url(https://www.elegantthemes.com/blog/wp-content/uploads/2017/07/programming-languages-to-learn-for-wordpress-featured-image.png) no-repeat 50% 50%;
       background-size: cover;
 }    
-#about
-{
-	
-}
 
-#grid-app
-{
-	
-}
-
-#sobre
-{
-	
-}
-#video
-{
-	
-}
-
-.footer-above
-{
-	padding: 100px 0 100px 0;
-	background: #252525;
-	color: white;
-}
-
-.footer-below
-{
-	padding: 20px;
-	background-color: #171717;
-	color: white;
-}
 /*end-home*/
 /*navbar*/
 
@@ -75,21 +24,11 @@ header {
       background:no-repeat 50% 50%;
       background-size: cover;
 }
-.clip-svg {
-      height: 0;
-      width: 0;
-    }
+
     
-   
 
  
-.content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
-}
+
  
 .logo {
       line-height: 60px;
@@ -200,18 +139,3 @@ nav ul li a {
     display:none
 }
 
-/*Login */
-.btn-group-wrap {
-      text-align: center;
-  }
-  
-  div.btn-group {
-      margin: 0 auto; 
-      text-align: center;
-      width: inherit;
-      display: inline-block;
-  }
-  
-  a {
-      float: left;   
-  }
