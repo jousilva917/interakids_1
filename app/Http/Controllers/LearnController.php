@@ -3,6 +3,7 @@
 namespace InteraKids\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class LearnController extends Controller
 {
@@ -19,6 +20,7 @@ class LearnController extends Controller
     }
     public function perfil()
     {
+
         return view('learn.perfil');
     }
 }
