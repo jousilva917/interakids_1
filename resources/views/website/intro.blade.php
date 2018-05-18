@@ -6,45 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ asset('css/intro.css') }}">
     <link rel="stylesheet" href="{{ asset('js/intro.js') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-    $(function(){
-    var welcomeSection = $('.welcome-section'),
-    enterButton = welcomeSection.find('.enter-button');
-    
-    setTimeout(function(){
-        welcomeSection.removeClass('content-hidden');
-    
-    },800);
-    
-    enterButton.on('click', function(e){
-    e.preventDefault();
-    welcomeSection.addClass('content-hidden').fadeOut();
-    )};
-});
 
-</script>
 </head>
 <body>
-<div class="wrapper"><h1>Programming</h1></div>
-<div class="welcome-section content-hidden">
-<div class="content-wrap" >
-<ul class="fly-in-text">
-<li>I</li>
-<li>N</li>
-<li>T</li>
-<li>E</li>
-<li>R</li>
-<li>A</li>
-<li>K</li>
-<li>I</li>
-<li>D</li>
-<li>S</li>
-</ul>
+<div class="preloader">
+  <div class="lines">
+    <div class="line line-1"></div>
+    <div class="line line-2"></div>
+    <div class="line line-3"></div>
+  </div>
+  
+  <div class="loading-text">LOADING</div>
+</div>
+
+<div class="btn">
 <a href="{{action('HomeController@index')}}" class="enter-button">Entrar</a>
 </div>
-</div>   
+   
+
 
 </body>
 </html>
