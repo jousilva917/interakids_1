@@ -3,9 +3,11 @@
 namespace InteraKids\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\TaskRequest;
 use App\User;
 use App\Task;
 use App\TaskLog;
+
 
 class LearnController extends Controller
 {
@@ -17,8 +19,15 @@ class LearnController extends Controller
     {
         return view('learn.index');
     }
-    public function task(){
-        return view('learn.task');
+    public function task(TaskRequest $request)
+    {
+        $task_id = $request->id;
+
+        $task_user = new TaskLog;
+        $task_user->task_id = $task_id;
+        $task_user->user_id = auth()->user()->id;
+        $task = Task::select('level')->where('id', $request->id)->limit(1)->first();
+        return $this->display_quest($task->level);
     }
     public function perfil()
     {
