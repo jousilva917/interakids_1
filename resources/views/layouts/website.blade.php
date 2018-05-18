@@ -1,5 +1,7 @@
 <html>
+    <head>
     @include('partials.head')
+    </head>
     <body>
         @yield('content')
         @include('partials.nav')
