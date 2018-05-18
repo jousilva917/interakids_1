@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        InteraKids\Providers\AppServiceProvider::class,
-        InteraKids\Providers\AuthServiceProvider::class,
-        // InteraKids\Providers\BroadcastServiceProvider::class,
-        InteraKids\Providers\EventServiceProvider::class,
-        InteraKids\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
 
     ],
 

@@ -24,7 +24,7 @@
             "database/factories"
         ],
         "psr-4": {
-            "InteraKids\\": "app/"
+            "App\\": "app/"
         }
     },
     "autoload-dev": {
