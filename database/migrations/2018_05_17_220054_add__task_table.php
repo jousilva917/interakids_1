@@ -15,7 +15,7 @@ class AddTaskTable extends Migration
     {
         Schema::create('task', function(Blueprint $table){
             $table->increments('id');
-            $table->string('nomeAula');
+            $table->string('level');
             $table->timestamps();
         });
     }
