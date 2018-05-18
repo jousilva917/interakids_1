@@ -4,6 +4,8 @@ namespace InteraKids\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Task;
+use App\TaskLog;
 
 class LearnController extends Controller
 {

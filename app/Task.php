@@ -8,12 +8,12 @@ class Task extends Model
 {
         protected $table = 'tasks';
 
-        public $primarykey = 'idAula';
+        public $primarykey = 'id';
         
-        public $timestamps = true;
+        public $timestamps = false;
 
-    public function user()
-    {
-        return $this->belongsTo('App\User');
-    }    
+        public function user()
+        {
+        return $this->belongsTo('App\Task', 'aula_id');
+        }    
 }
