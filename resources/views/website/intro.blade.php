@@ -6,8 +6,6 @@
   </head>
 <body>
     
-  <div id="loader" class="loader"></div>
-  <div style="display:none;" id="tudo_page"> CONTEUDO DA PÁGINA </div>
  
 </body>
 </html>

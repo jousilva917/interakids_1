@@ -1,41 +1,46 @@
     <!-- Navegação -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
+    <script src="{{asset('/js/navbar.js')}}" defer></script>
+    <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
+    <nav class="" id="navbar">
+            <div class="nav-wrapper">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     {{ config('app.name', 'InteraKids') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-    
-                    </ul>
-    
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
+                    <ul id="menu">
                         <li class="{{Request::is('home') ? 'active': ''}}">
+                        <img src="https://image.flaticon.com/icons/svg/263/263115.svg" alt="home" >
                             <a class="nav-link" href="{{ action('HomeController@index') }}">Home
                             </a>
+                            
                         </li>
                         <li class="{{Request::is('aprenda') ? 'active': ''}}">
+                        <img src="https://image.flaticon.com/icons/svg/263/263062.svg" alt="aprenda" >
                             <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Aprenda</a>
                         </li>
-                        <li class="{{Request::is('explore') ? 'active': ''}}">
-                        <a class="nav-link" href="{{action('HomeController@explore')}}">Explore</a>
-                        </li>
+                        
                         <li class="{{Request::is('sobre') ? 'active': ''}}">
+                        <img src="https://image.flaticon.com/icons/svg/263/263058.svg" alt="sobre" >
                             <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
                         </li>
                         <li class="{{Request::is('contato') ? 'active': ''}}">
+                        <img src="https://image.flaticon.com/icons/svg/263/263094.svg" alt="contato" >
                             <a class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
                         </li>
+                        
                         <!-- Authentication Links -->
                         @guest
-                        <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                        <li><a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a></li>
+                        <li>
+                        <img src="https://image.flaticon.com/icons/svg/184/184307.svg" alt="login" >
+                            <a class="nav-link " href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        <li>
+                        <img src="https://image.flaticon.com/icons/svg/184/184304.svg" alt="registrar" >
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
+                        </li>
                         @else
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -57,6 +62,8 @@
                         </li>
                         @endguest
                     </ul>
+
+
                 </div>
             </div>
         </nav>

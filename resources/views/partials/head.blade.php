@@ -6,6 +6,7 @@
 <!-- Bootstrap CSS -->
 
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
 <link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
 
 <!-- Scripts -->

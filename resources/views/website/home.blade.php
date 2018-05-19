@@ -1,8 +1,7 @@
 @extends('layouts.website')
 @section('content')
 <link href="{{ asset('css/parallax.css') }}" rel="stylesheet">
-<div id="loader" class="loader"></div>
-<div style="display:none;" id="tudo_page">
+
 <header class="header">
     <div class="landing">
     <div id='hero'>
