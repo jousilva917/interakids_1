@@ -12,33 +12,33 @@
                     <!-- Right Side Of Navbar -->
                     <ul id="menu">
                         <li class="{{Request::is('home') ? 'active': ''}}">
-                        <img src="https://image.flaticon.com/icons/svg/263/263115.svg" alt="home" >
+                        <img id="imagem"src="https://image.flaticon.com/icons/svg/263/263115.svg" alt="home" >
                             <a class="nav-link" href="{{ action('HomeController@index') }}">Home
                             </a>
                             
                         </li>
                         <li class="{{Request::is('aprenda') ? 'active': ''}}">
-                        <img src="https://image.flaticon.com/icons/svg/263/263062.svg" alt="aprenda" >
+                        <img  id="imagem" src="https://image.flaticon.com/icons/svg/263/263062.svg" alt="aprenda" >
                             <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Aprenda</a>
                         </li>
                         
                         <li class="{{Request::is('sobre') ? 'active': ''}}">
-                        <img src="https://image.flaticon.com/icons/svg/263/263058.svg" alt="sobre" >
+                        <img  id="imagem" src="https://image.flaticon.com/icons/svg/263/263058.svg" alt="sobre" >
                             <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
                         </li>
-                        <li class="{{Request::is('contato') ? 'active': ''}}">
-                        <img src="https://image.flaticon.com/icons/svg/263/263094.svg" alt="contato" >
+                        <li   class="{{Request::is('contato') ? 'active': ''}}">
+                        <img id="imagem" src="https://image.flaticon.com/icons/svg/263/263094.svg" alt="contato" >
                             <a class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
 </li>
                         
                         <!-- Authentication Links -->
                         @guest
                         <li>
-                        <img src="https://image.flaticon.com/icons/svg/184/184307.svg" alt="login" >
+                        <img id="imagem" src="https://image.flaticon.com/icons/svg/184/184307.svg" alt="login" >
                             <a class="nav-link " href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         <li>
-                        <img src="https://image.flaticon.com/icons/svg/184/184304.svg" alt="registrar" >
+                        <img id="imagem" src="https://image.flaticon.com/icons/svg/184/184304.svg" alt="registrar" >
                             <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
                         </li>
                         @else
