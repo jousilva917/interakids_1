@@ -29,7 +29,7 @@
                         <li class="{{Request::is('contato') ? 'active': ''}}">
                         <img src="https://image.flaticon.com/icons/svg/263/263094.svg" alt="contato" >
                             <a class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
-                        </li>
+</li>
                         
                         <!-- Authentication Links -->
                         @guest
