@@ -1,5 +1,8 @@
 @extends('layouts.perfil')
 @section('perfil')
+@foreach($errors->all() as $error)
+    <li>{{$error}}</li>
+    @endforeach
 <form action="{{action('LearnController@task')}}" method="post">
     @csrf
     <p>Titulo</p>

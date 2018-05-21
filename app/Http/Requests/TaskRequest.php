@@ -31,4 +31,10 @@ class TaskRequest extends FormRequest
             'texto' => 'max:255'
         ];
     }
+    public function messages()
+    {
+        return [
+            'max' => 'O :attribute precisa ter no mínimo :max caracteres'
+        ];        
+    }
 }
