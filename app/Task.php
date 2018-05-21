@@ -9,7 +9,7 @@ class Task extends Model
         protected $table = 'task';
         public $primarykey = 'id';
         public $timestamps = true;
-        protected $fillable = array('titulo', 'texto','user_id');
+        protected $fillable = ['titulo', 'texto','user_id'];
         public function user()
         {
         return $this->belongsTo('App\User');

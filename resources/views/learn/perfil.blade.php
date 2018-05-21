@@ -3,10 +3,10 @@
 @section('perfil')
 <a href="{{ action('LearnController@form') }}" class="btn btn-primary"> Aprender </a>
 <div class="container mt-4">
-    @foreach($tasks as $t)
+    @foreach($tasks as $task)
     <table class="table">
         <tr>
-        <td>{{$t->titulo}}</td>
+        <td>{{$task->titulo}}</td>
         </tr>
     </table>
     @endforeach

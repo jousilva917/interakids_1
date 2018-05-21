@@ -30,7 +30,8 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        $tasks = Task::all();
-        return view('learn.perfil')->with('tasks', $tasks);
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id); 
+        return view('learn.perfil')->with('tasks', $user->task);
     }
 }
