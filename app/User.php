@@ -29,6 +29,6 @@ class User extends Authenticatable
 
     public function tasks()
     {
-        return $this->hasMany('App\TaskLog');
+        return $this->hasMany('App\Task');
     }
 }

@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Requests\TaskRequest;
 use App\User;
 use App\Task;
-use App\TaskLog;
 
 
 class LearnController extends Controller
@@ -21,17 +20,17 @@ class LearnController extends Controller
     }
     public function task(TaskRequest $request)
     {
-        $task_id = $request->id;
-
-        $task_user = new TaskLog;
-        $task_user->task_id = $task_id;
-        $task_user->user_id = auth()->user()->id;
-        $task = Task::select('level')->where('id', $request->id)->limit(1)->first();
-        return $this->display_quest($task->level);
+        $tasks = $request->all();
+        Task::Create($tasks);
+        return redirect()->action('LearnController@perfil');
+    }
+    public function form()
+    {
+        return view('learn.create');
     }
     public function perfil()
     {
-
-        return view('learn.perfil');
+        $tasks = Task::all();
+        return view('learn.perfil')->with('tasks', $tasks);
     }
 }

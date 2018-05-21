@@ -14,8 +14,8 @@ Route::get('/aprenda', 'LearnController@aprenda');
 Route::get('/explore', 'HomeController@explore');
 Route::get('/sobre', 'HomeController@sobre');
 Route::get('/contato', 'HomeController@contato');
-Route::get('/task', 'LearnController@task');
-
+Route::post('/task', 'LearnController@task');
+Route::get('/create', 'LearnController@form');
 //Sistema de cadastro
 Auth::routes();
 

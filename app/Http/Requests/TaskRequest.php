@@ -16,7 +16,7 @@ class TaskRequest extends FormRequest
         if(Auth()->check())
         {
             return true;
-        }else return false;
+      }
     }
 
     /**
@@ -27,7 +27,8 @@ class TaskRequest extends FormRequest
     public function rules()
     {
         return [
-            'id' => 'required|integer|exists:aula,id'   
+            'titulo' => 'max:255',
+            'texto' => 'max:255'
         ];
     }
 }
