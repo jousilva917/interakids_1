@@ -9,7 +9,8 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                    <!-- Right Side Of Navbar -->
+                    <!-- Navbar -->
+                    
                     <ul id="menu">
                         <li class="{{Request::is('home') ? 'active': ''}}">
                         <img id="imagem"src="https://image.flaticon.com/icons/svg/263/263115.svg" alt="home" >
@@ -29,7 +30,7 @@
                         <li   class="{{Request::is('contato') ? 'active': ''}}">
                         <img id="imagem" src="https://image.flaticon.com/icons/svg/263/263094.svg" alt="contato" >
                             <a class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
-</li>
+                        </li>
                         
                         <!-- Authentication Links -->
                         @guest
@@ -63,7 +64,7 @@
                         @endguest
                     </ul>
 
-
+            
                 </div>
             </div>
         </nav>

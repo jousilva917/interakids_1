@@ -1,7 +1,7 @@
 <html>
     @include('partials.head')
     <body>
-        @include('partials.nav')
+    @include('partials.nav')
         <div class="about">
             <div class="landing">
                <h1>Sobre</h1>
@@ -9,7 +9,7 @@
         </div>
         <div class="album py-5 bg-light">
           <div class="container">
-  
+
             <div class="row">
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
