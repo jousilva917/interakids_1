@@ -34,7 +34,7 @@ class TaskRequest extends FormRequest
     public function messages()
     {
         return [
-            'max' => 'O :attribute precisa ter no mínimo :max caracteres'
+            'max' => 'O :attribute pode ter máximo :max caracteres'
         ];        
     }
 }
