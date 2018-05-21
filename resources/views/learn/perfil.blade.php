@@ -1,12 +1,12 @@
 @extends('layouts.perfil')
 @include('partials.perfilHead')
 @section('perfil')
-<a href="{{ action('LearnController@form') }}" class="btn btn-primary"> Aprender </a>
+<a href="{{ action('LearnController@form') }}" class="btn btn-primary"> Adicionar </a>
 <div class="container mt-4">
-    @foreach($tasks as $task)
+    @foreach($tasks as $t)
     <table class="table">
         <tr>
-        <td>{{$task->titulo}}</td>
+        <td>{{$t->titulo}}</td>
         </tr>
     </table>
     @endforeach
