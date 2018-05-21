@@ -3,7 +3,7 @@
 @section('perfil')
 <a href="{{ action('LearnController@form') }}" class="btn btn-primary"> Adicionar </a>
 <div class="container mt-4">
-    <table class="table">
+    <table class="table table-striped table-dark">
         <tr>
             <th>Título</th>
             <th>Texto</th>
