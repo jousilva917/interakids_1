@@ -1,6 +1,4 @@
     <!-- Navegação -->
-    <script src="{{asset('/js/navbar.js')}}" defer></script>
-    <link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
     <nav class="" id="navbar">
             <div class="nav-wrapper">
                 <a class="navbar-brand" href="{{ url('/home') }}">

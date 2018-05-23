@@ -1,6 +1,7 @@
 <html>
     <head>
         @include('partials.learnHead')
+        @include('partials.head')
     </head>
     <body>
         @include('partials.nav')
