@@ -4,7 +4,7 @@
 </head>
  <body>
      @include('partials.nav')
-        <main class="py-4">
+        <main class="mt-5">
             @yield('conteudo')
         </main>
     </div>

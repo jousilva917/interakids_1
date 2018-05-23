@@ -1,12 +1,9 @@
 @extends('layouts.app')
 @section('conteudo')
-<div class="card">
+<div class="container">
     <div class="row justify-content-center">
-
         <div class="col-md-8">
-            
             <div class="card">
-                
                 <div class="card-header  ">{{ __('Login') }}
                 <p>
                     <a href="" class="float-right btn btn-outline-dark">Sign up</a>
