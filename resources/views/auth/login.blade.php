@@ -1,6 +1,4 @@
 @extends('layouts.app')
-@include('partials.nav')
-
 @section('conteudo')
 <div class="card">
     <div class="row justify-content-center">

@@ -3,14 +3,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<link href="{{ asset('css/temp.css') }}" rel="stylesheet">
-<link href="{{ asset('css/parallax.css') }}" rel="stylesheet">
+<link href="{{ asset('css/site/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/site/temp.css') }}" rel="stylesheet">
+<link href="{{ asset('css/site/parallax.css') }}" rel="stylesheet">
 <link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
-<link href="{{ asset('css/intro.css') }}" rel="stylesheet">
-<link href="{{ asset('css/navbar.css') }}" rel="stylesheet">
+<link href="{{ asset('css/site/intro.css') }}" rel="stylesheet">
+<link href="{{ asset('css/site/navbar.css') }}" rel="stylesheet">
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
+<script src="{{ asset('js/site/app.js') }}" defer></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $("textarea").addClass("materialize-textarea")
@@ -36,5 +36,5 @@
     });
 }).call(this);
 </script>
-<script src="{{asset('/js/intro.js')}}" defer></script>  
-<script src="{{asset('/js/navbar.js')}}" defer></script>
+<script src="{{asset('/js/site/intro.js')}}" defer></script>  
+<script src="{{asset('/js/site/navbar.js')}}" defer></script>

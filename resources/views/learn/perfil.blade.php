@@ -1,5 +1,4 @@
 @extends('layouts.perfil')
-@include('partials.perfilHead')
 @section('perfil')
 <a href="{{ action('LearnController@form') }}" class="btn btn-primary"> Adicionar </a>
 <div class="container mt-4">
