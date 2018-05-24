@@ -18,6 +18,5 @@ Route::post('/task', 'LearnController@task');
 Route::get('/create', 'LearnController@form');
 //Sistema de cadastro
 Auth::routes();
-
 Route::get('/perfil', 'LearnController@perfil')->name('perfil');
 
