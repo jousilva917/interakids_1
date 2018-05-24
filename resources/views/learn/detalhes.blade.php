@@ -1,8 +1,5 @@
 @extends('layouts.perfil')
 @section('perfil')
-
-<ul>
-{{$tasks->nome}}
+<h1>{{$tasks->titulo}}</h1>
 {{$tasks->texto}}
-</ul>
 @endsection
