@@ -34,4 +34,9 @@ class LearnController extends Controller
         $user = User::find($user_id);
         return view('learn.perfil')->with('tasks', $user->task);
     }
+    public function detalhes($id)
+    {
+        $tasks = Task::find($id);
+        return view('learn.detalhes')->with('tasks', $tasks);
+    }
 }
