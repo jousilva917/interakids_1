@@ -15,10 +15,9 @@ class AddTaskTable extends Migration
     {
         Schema::create('task', function(Blueprint $table){
             $table->increments('id');
-            $table->string('titulo');
-            $table->mediumText('texto');
+            $table->string('nome');
+            $table->integer('stars_reward')->default(0);
             $table->timestamps();
-            $table->integer('user_id');
         });
     }
 
