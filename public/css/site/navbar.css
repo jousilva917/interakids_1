@@ -1,29 +1,22 @@
 
 
-a {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  text-decoration: none;
-}
-
 /*
  Navbar
     */
 
-#navbar {
-  background: white;
-  padding: 30px;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+.navbar {
+margin-bottom: 0;
+border-radius: 0;
+background-color: white;
+color: #fff;
+padding: 1% 0 ;
+font-size: 1.2em;
+border: 0;
+
 }
 
-.navbar li a {
-  padding-bottom: 0, 0 ,10px ,10px;
-  text-align: center;
-  font-size: 23px;
-  -webkit-box-shadow: 0 0px 3px 0px #999;
-    -moz-box-shadow: 0 0px 3px 0px #999;
-    box-shadow: 0 0px 3px 0px #999;
+.navbar-brand {
+float: left;
+min-height: 55px;
+padding: 0 15px 5px;
 }
