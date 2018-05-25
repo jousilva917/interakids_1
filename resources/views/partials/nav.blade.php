@@ -16,11 +16,11 @@
             <li class="{{Request::is('aprenda') ? 'active': ''}}">
                 <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Aprenda</a>
             </li>
-            <li class="{{Request::is('sobre') ? 'active': ''}}">
-                <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
-            </li>
             <li class="{{Request::is('contato') ? 'active': ''}}">
                 <a class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
+            </li>
+            <li class="{{Request::is('sobre') ? 'active': ''}}">
+                <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
             </li>
             <!-- Authentication Links -->
             @guest

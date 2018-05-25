@@ -19,9 +19,9 @@
 }
 
 #hero-mobile {
-  display: none;
+  display: block;
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom/cover;
-  height: 320px;
+  height: 300px;
 }
 
 .first-section {
@@ -51,6 +51,7 @@ p {
 
 .layer-bg {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
+  background-position:bottom;
 }
 
 .layer-1 {
