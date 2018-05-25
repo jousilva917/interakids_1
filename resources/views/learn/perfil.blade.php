@@ -4,15 +4,15 @@
 <div class="container mt-4">
     <table class="table table-striped table-dark">
         <tr>
-            <th>Título</th>
-            <th>Texto</th>
+            <th>Nome</th>
+            <th>Nível</th>
             <th>Ver</th>
             <th>Ações</th>
         </tr>
         @foreach($tasks as $t)
         <tr>
-        <td>{{$t->titulo}}</td>
-        <td>{{$t->texto}}</td>
+        <td>{{$t->nome}}</td>
+        <td>{{$t->level}}</td>
         <td><a class="btn btn-success" href="/perfil/{{$t->id}}">Detalhes</a></td>
         <td><a class="btn btn-danger" href="/perfil/deletar/{{$t->id}}">Excluir</a></td>
         </tr>
