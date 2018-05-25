@@ -14,7 +14,7 @@
         <td>{{$t->titulo}}</td>
         <td>{{$t->texto}}</td>
         <td><a class="btn btn-success" href="/perfil/{{$t->id}}">Detalhes</a></td>
-        <td><a class="btn btn-danger">Excluir</a></td>
+        <td><a class="btn btn-danger" href="/perfil/deletar/{{$t->id}}">Excluir</a></td>
         </tr>
         @endforeach
     </table>

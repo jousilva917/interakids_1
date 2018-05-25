@@ -39,4 +39,10 @@ class LearnController extends Controller
         $tasks = Task::find($id);
         return view('learn.detalhes')->with('tasks', $tasks);
     }
+    public function delete($id)
+    {
+        $tasks = Task::find($id);
+        $tasks->delete();
+        return redirect()->action('LearnController@perfil');
+    }
 }
