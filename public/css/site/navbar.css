@@ -16,13 +16,10 @@
  Navbar
     */
   #navbar {
-    background: white;
-    color: rgb(13, 26, 38);
-    position: top;
-    top: 0;
-    width: 100%;
-    height: 100px;
-    z-index: 10;
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+    
   }
 
  
