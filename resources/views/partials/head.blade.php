@@ -9,6 +9,7 @@
 <link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
 <link href="{{ asset('css/site/intro.css') }}" rel="stylesheet">
 <link href="{{ asset('css/site/navbar.css') }}" rel="stylesheet">
+<link href="{{asset('css/learn/font-awesome.min.css')}}" rel="stylesheet">
 <!-- Scripts -->
 <script src="{{ asset('js/site/app.js') }}" defer></script>
 <script type="text/javascript">

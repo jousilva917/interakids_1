@@ -9,27 +9,27 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navbar -->
-        <div id="navbarNavDropdown" class="navbar-collapse collapse" style="justify-content: flex-end;">
+        <div id="navbarNavDropdown" class="navbar-collapse collapse  " style="justify-content: flex-end;">
         <ul class="navbar-nav">
             <li class="{{Request::is('home') ? 'active': ''}} nav-item">
-                <a class="nav-link" href="{{ action('HomeController@index') }}">Home</a>
+                <a id="btn-1" class="nav-link" href="{{ action('HomeController@index') }}"><i class="fa fa-home fa-2x" id="icons-1"></i> inicial </a>
             </li>
             <li class="{{Request::is('aprenda') ? 'active': ''}} nav-item">
-                <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Aprenda</a>
+                <a id="btn-2" class="nav-link" href="{{ action('LearnController@aprenda') }}"><i class="" id="icons-2"></i>Explore</a>
             </li>
             <li class="{{Request::is('contato') ? 'active': ''}} nav-item">
-                <a class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
+                <a id="btn-3" class="nav-link" href="{{ action('HomeController@contato') }}"><i class="" id="icons-3"></i>Contato</a>
             </li>
             <li class="{{Request::is('sobre') ? 'active': ''}} nav-item">
-                <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
+                <a id="btn-4" class="nav-link" href="{{ action('HomeController@sobre') }}"><i class="" id="icons-4"></i>Sobre</a>
             </li>
             <!-- Authentication Links -->
             @guest
             <li class="{{Request::is('login') ? 'active': ''}} nav-item">
-                <a class="nav-link " href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a id="btn-5" class="nav-link" href="{{ route('login') }}"><i class="" id="icons-5"></i>{{ __('Login') }}</a>
             </li>
             <li class="{{Request::is('register') ? 'active': ''}} nav-item">
-                <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
+                <a id="btn-6" class="nav-link" href="{{ route('register') }}"><i class="" id="icons-6"></i>{{ __('Registrar') }}</a>
             </li>
             @else
             <li class="nav-item dropdown">
