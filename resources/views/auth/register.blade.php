@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('conteudo')
-<div class="container">
+<link href="{{ asset('css/site/login-register.css') }}" rel="stylesheet">
+<div class="container" id="container2">
     <div class="row justify-content-center">
         <div class="col-md-8  mt-5">
             <div class="card  mt-5">
