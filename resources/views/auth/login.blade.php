@@ -1,14 +1,13 @@
 @extends('layouts.app')
 @section('conteudo')
-<div class="container">
+<link href="{{ asset('css/site/login-register.css') }}" rel="stylesheet">
+<div class="container-fluid" id="container2">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header  ">{{ __('Login') }}
+                <div class="card-header ">{{ __('Login') }}
                 <p>
                     <a href="" class="float-right btn btn-outline-dark">Sign up</a>
-		            <a href="" class="btn btn-outline-primary btn-lg"> <i class="fab fa-google"></i>   Login via Google</a>
-		            <a href="" class="btn btn-outline-secondary btn-lg"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
 	            </p>
                 </div>
                 <div class="card-body">
@@ -64,4 +63,85 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container-fluid" id="container2">
+<div class="row modal-dialog text-center">
+
+        <div class="col-sm-8" id="main-section">
+            <div class="modal-content" id="modal-content">
+                <div class="col-sm-12 user-img">
+                    <img src="{{asset('images\face.png')}}">
+                </div>
+                <form class="col-sm-12" id="form-input">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Enter Password">
+                    </div>
+                    <button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i>Login</button>
+                    <button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i>Login from Google</button>
+                </form>
+                
+            </div>
+        </div>
+        
+    </div>
+    </div>
+-->
 @endsection

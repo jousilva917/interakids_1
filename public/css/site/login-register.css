@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+#container2{
+    background-color: #848484;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+}
+/*
+#main-section{
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+    
+}
+#modal-content{
+    background-color: #3b4652;
+    opacity: .95;
+    padding: 0 18px;
+    box-shadow: 0px 0px 3px #848484;
+    height: 500px;
+}
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 35px;
+    
+}
+.user-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px #848484;
+}
+#form-input{
+    position: relative;
+    bottom: 340px;
+}
+.form-group{
+    margin-bottom: 25px;
+}
+.form-group input{
+    height: 42px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding-left: 54px;
+}
+.form-group::before{
+    font-family: "Font Awesome 5 Solid";   content: "\f007";
+    content: "\f007";
+    position: absolute;
+    font-size: 22px;
+    color: #555e60;
+    left: 28px;
+    padding-top: 4px;
+}
+.form-group:last-of-type::before{
+    content: "\f09c";
+}
+button{
+    width: 80%;
+    margin: 5px 0 25px;
+}
+.btn{
+    background-color: #27c2a5;
+    color: #fff;
+    font-size: 19px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    border-bottom: 4px solid #219882;
+}
+.btn:hover, .btn:focus{
+    background-color: @25a890;
+    border-bottom: 4px solid #25a890;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

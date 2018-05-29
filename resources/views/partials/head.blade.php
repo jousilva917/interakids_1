@@ -4,12 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
 <link href="{{ asset('css/site/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/site/login-register.css') }}" rel="stylesheet">
 <link href="{{ asset('css/site/temp.css') }}" rel="stylesheet">
 <link href="{{ asset('css/site/parallax.css') }}" rel="stylesheet">
 <link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
 <link href="{{ asset('css/site/intro.css') }}" rel="stylesheet">
 <link href="{{ asset('css/site/navbar.css') }}" rel="stylesheet">
 <link href="{{asset('css/learn/font-awesome.min.css')}}" rel="stylesheet">
+
 <!-- Scripts -->
 <script src="{{ asset('js/site/app.js') }}" defer></script>
 <script type="text/javascript">
