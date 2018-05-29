@@ -1,6 +1,6 @@
 <!-- Navegação -->
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNav">
+<nav class="navbar navbar-expand-lg bg-dark fixed-top " id="mainNav">
 <div class="container" >
     <a class="navbar-brand" href="{{ url('/home') }}">
         {{ config('app.name', 'InteraKids') }}
