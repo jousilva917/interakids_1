@@ -1,16 +1,16 @@
 $.when($.ready).then(function(){ 
-    $('#characterLeft').text('140 characters left');
+    $('#characterLeft').text('140 caracteres restantes');
     $('#message').keydown(function () {
         var max = 140;
         var len = $(this).val().length;
         if (len >= max) {
-            $('#characterLeft').text('You have reached the limit');
+            $('#characterLeft').text('Você alcançou o limite');
             $('#characterLeft').addClass('red');
             $('#btnSubmit').addClass('disabled');            
         } 
         else {
             var ch = max - len;
-            $('#characterLeft').text(ch + ' characters left');
+            $('#characterLeft').text(ch + ' caracteres restantes');
             $('#btnSubmit').removeClass('disabled');
             $('#characterLeft').removeClass('red');            
         }
