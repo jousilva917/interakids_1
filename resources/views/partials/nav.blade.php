@@ -16,8 +16,8 @@
             <li class="nav-item {{Request::is('aprenda') ? 'active': ''}}">
                 <a id="btn" class="nav-link" href="{{ action('LearnController@aprenda') }}">Explore</a>
             </li>
-            <li class="nav-item {{Request::is('contato') ? 'active': ''}}">
-                <a id="btn" class="nav-link" href="{{ action('HomeController@contato') }}">Contato</a>
+            <li class="nav-item {{Request::is('contact') ? 'active': ''}}">
+                <a id="btn" class="nav-link" href="{{ action('HomeController@contact') }}">Contato</a>
             </li>
             <li class="nav-item {{Request::is('sobre') ? 'active': ''}}">
                 <a id="btn" class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>

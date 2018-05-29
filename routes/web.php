@@ -11,7 +11,7 @@ Route::get('/', function(){
 });
 Route::get('/home', 'HomeController@index');
 Route::get('/sobre', 'HomeController@sobre');
-Route::get('/contato', 'HomeController@contato');
+Route::get('/contato', 'HomeController@contact');
 //LearnController
 Route::get('/aprenda', 'LearnController@aprenda');
 Route::post('/task', 'LearnController@task');
