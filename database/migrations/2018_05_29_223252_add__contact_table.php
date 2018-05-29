@@ -17,7 +17,7 @@ class AddContactTable extends Migration
             $table->increments('id');
             $table->String('name');
             $table->String('email');
-            $table->tinyText('subject');
+            $table->Text('subject');
             $table->mediumText('message');
         });
     }
