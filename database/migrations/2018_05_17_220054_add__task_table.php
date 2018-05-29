@@ -15,7 +15,7 @@ class AddTaskTable extends Migration
     {
         Schema::create('task', function(Blueprint $table){
             $table->increments('id');
-            $table->string('nome');
+            $table->string('name');
             $table->integer('level');
             $table->integer('stars_reward')->nullable();
             $table->integer('min_stars')->default(1);
