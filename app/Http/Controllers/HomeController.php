@@ -35,7 +35,7 @@ class HomeController extends Controller
     }
     public function contato()
     {
-        return view('website.contato');
+        return view('website.contact');
     }
     public function submit()
     {
