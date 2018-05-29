@@ -1,6 +1,5 @@
-@extends('layouts.website') 
-@section('content')
-<link href="{{ asset('css/temp.css') }}" rel="stylesheet">
+@extends('layouts.website') @section('content')
+
 <div id="loader" class="loader"></div>
 <div style="display:none;" id="tudo_page">
 
@@ -8,7 +7,30 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+        <!--Modal-->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+         Lets-play
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/modal-->
       </div>
     </div>
   </header>
@@ -40,50 +62,50 @@
         <div class="row">
           <div class="col-sm-6 col-md-4">
             <a class="lightbox" href="#">
-              <img src="https://lh3.googleusercontent.com/S18QgrA0SPyFWupMb8zyF04eFYPh6fhJMVl8wp4JtvXTdzcxexgebVb_WbYxZBMkduYGZxc0AlmmlkqhM_hc=w1240-h887"
+              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
                 alt="Park">
             </a>
           </div>
           <div class="col-sm-6 col-md-4">
             <a class="lightbox" href="#">
-              <img src="https://lh3.googleusercontent.com/S18QgrA0SPyFWupMb8zyF04eFYPh6fhJMVl8wp4JtvXTdzcxexgebVb_WbYxZBMkduYGZxc0AlmmlkqhM_hc=w1240-h887"
+              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
                 alt="Bridge">
             </a>
           </div>
           <div class="col-sm-12 col-md-4">
             <a class="lightbox" href="#">
-              <img src="https://lh3.googleusercontent.com/S18QgrA0SPyFWupMb8zyF04eFYPh6fhJMVl8wp4JtvXTdzcxexgebVb_WbYxZBMkduYGZxc0AlmmlkqhM_hc=w1240-h887"
+              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
                 alt="Tunnel">
             </a>
           </div>
           <div class="col-sm-6 col-md-4">
             <a class="lightbox" href="#">
-              <img src="https://lh3.googleusercontent.com/S18QgrA0SPyFWupMb8zyF04eFYPh6fhJMVl8wp4JtvXTdzcxexgebVb_WbYxZBMkduYGZxc0AlmmlkqhM_hc=w1240-h887"
+              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
                 alt="Coast">
             </a>
           </div>
           <div class="col-sm-6 col-md-4">
             <a class="lightbox" href="#">
-              <img src="https://lh3.googleusercontent.com/S18QgrA0SPyFWupMb8zyF04eFYPh6fhJMVl8wp4JtvXTdzcxexgebVb_WbYxZBMkduYGZxc0AlmmlkqhM_hc=w1240-h887"
+              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
                 alt="Rails">
             </a>
           </div>
           <div class="col-sm-6 col-md-4">
             <a class="lightbox" href="#">
-              <img src="https://lh3.googleusercontent.com/S18QgrA0SPyFWupMb8zyF04eFYPh6fhJMVl8wp4JtvXTdzcxexgebVb_WbYxZBMkduYGZxc0AlmmlkqhM_hc=w1240-h887"
+              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
                 alt="Traffic">
             </a>
           </div>
         </div>
       </div>
     </div>
-<!--about us-->
-<div class="container-fluid" id="about-us">
-  <div class="row">
-    <div class="col-sm-12">
-      <h1>About us</h1>
+    <!--about us-->
+    <div class="container-fluid" id="about-us">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>About us</h1>
+        </div>
+      </div>
     </div>
+    @endsection
   </div>
-</div>
-@endsection
-</div>

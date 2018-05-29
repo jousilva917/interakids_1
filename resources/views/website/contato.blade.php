@@ -1,8 +1,11 @@
-<html>
-@include('partials.head')
-<body>
+<html></html>
+
+<head> @include('partials.head') </head>
+
+<body> 
     @include('partials.nav')
-    
-@include('partials.footer')
-</body>
+
+    @include('partials.footer')
+     </body>
+
 </html>
