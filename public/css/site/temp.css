@@ -283,23 +283,24 @@ header.masthead .intro-text {
 /*Footer*/
 #footer{
   background-color: greenyellow;
-  position: relative;
-  bottom: 0px;
-  top:100%;
+  position: absolute;
+  width: 100%;
 }
 #contact1{
   position: absolute;
-  top: 100px;
+  top: 200px;
+
   height: 300px;
+  background-color: #888;
+}
+/*About-page*/
+#containerAbout{
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100px;
 }
 
-.red{
-  color:red;
-  }
-.form-area
-{
-background-color: #FAFAFA;
-padding: 10px 30px 50px;
-margin: 10px 10px 20px;
-border: 1px solid GREY;
-}
+
+/*End-About-page*/
