@@ -289,6 +289,17 @@ header.masthead .intro-text {
 }
 #contact1{
   position: absolute;
-  top: 200px;
+  top: 100px;
   height: 300px;
+}
+
+.red{
+  color:red;
+  }
+.form-area
+{
+background-color: #FAFAFA;
+padding: 10px 30px 50px;
+margin: 10px 10px 20px;
+border: 1px solid GREY;
 }
