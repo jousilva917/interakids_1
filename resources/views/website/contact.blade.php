@@ -1,11 +1,12 @@
 @extends('layouts.website')
 @section('content')
-<div class="container-fluid mb-5" id="contact1">         
+<div class="container-fluid container-center" id="contact1">         
     <div class="col-md-5">
         <div class="form-area">  
-            <form role="form">
-            <br style="clear:both">
-                <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+            <form action="" method="post">
+                @csrf
+        <br style="clear:both">
+            <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
         <div class="form-group">
             <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
         </div>
