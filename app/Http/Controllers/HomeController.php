@@ -3,28 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Contact;
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth', ['except' => ['index', 'sobre', 'contato','intro']]);
-    }
-
     /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
      */
-    public function intro()
-    {
-        return view('website.intro');
-    }
     public function index()
     {
         return view('website.home');
@@ -33,12 +19,14 @@ class HomeController extends Controller
     {
         return view('website.about');
     }
-    public function contato()
+    public function contact()
     {
         return view('website.contact');
     }
-    public function submit()
+    public function submit(Request $request)
     {
-        return redirect()->action('HomeController@contact');
+        $sent = $request->all();
+        Contact::create($sent);
+        return redirect()->action('HomeController@contact')->with('success','Enviado com sucesso');
     }
 }

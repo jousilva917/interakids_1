@@ -19,6 +19,7 @@ class AddContactTable extends Migration
             $table->String('email');
             $table->Text('subject');
             $table->mediumText('message');
+            $table->timestamps();
         });
     }
 
