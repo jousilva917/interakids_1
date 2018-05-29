@@ -23,4 +23,8 @@ class HomeController extends Controller
     {
         return view('website.contact');
     }
+    public function submit()
+    {
+        return redirect()->action('HomeController@contact');
+    }
 }
