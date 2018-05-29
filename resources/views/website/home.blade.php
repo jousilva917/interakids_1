@@ -1,9 +1,7 @@
 @extends('layouts.website') 
 @section('content')
-<link href="{{ asset('css/temp.css') }}" rel="stylesheet">
 <div id="loader" class="loader"></div>
 <div style="display:none;" id="tudo_page">
-
   <!-- Header -->
   <header class="masthead">
     <div class="container">

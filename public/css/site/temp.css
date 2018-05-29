@@ -283,5 +283,12 @@ header.masthead .intro-text {
 /*Footer*/
 #footer{
   background-color: greenyellow;
-
+  position: relative;
+  bottom: 0px;
+  top:100%;
+}
+#contact1{
+  position: absolute;
+  top: 200px;
+  height: 300px;
 }
