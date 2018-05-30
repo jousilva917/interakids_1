@@ -8,10 +8,10 @@
             <br style="clear:both">
                 <h3 style="margin-bottom: 25px; text-align: center;">Entre em contato</h3>
             <div class="form-group">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Nome" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nome (opcional)">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" id="subject" name="subject" placeholder="Assunto" required>

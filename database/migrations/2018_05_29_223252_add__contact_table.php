@@ -15,7 +15,7 @@ class AddContactTable extends Migration
     {
         Schema::create('contact', function(Blueprint $table){
             $table->increments('id');
-            $table->String('name');
+            $table->String('name')->nullable();
             $table->String('email');
             $table->Text('subject');
             $table->mediumText('message');
