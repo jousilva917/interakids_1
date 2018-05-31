@@ -10,8 +10,4 @@ class Task extends Model
         public $primarykey = 'id';
         public $timestamps = true;
         protected $fillable = ['titulo', 'texto','user_id'];
-        public function user()
-        {
-        return $this->belongsTo('App\User');
-        }    
 }
