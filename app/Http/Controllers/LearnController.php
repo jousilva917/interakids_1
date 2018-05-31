@@ -18,30 +18,13 @@ class LearnController extends Controller
     {
         return view('learn.index');
     }
-    public function task(TaskRequest $request)
-    {
-        $tasks = $request->all();
-        Task::Create($tasks);
-        return redirect()->action('LearnController@perfil');
-    }
-    public function form()
-    {
-        return view('learn.create');
-    }
     public function perfil()
     {
-        $task = Task::all();
-        return view('learn.perfil')->with('tasks', $task);
+        $user = User::all();
+        return view('learn.perfil')->with('user', $user);
     }
-    public function detalhes($id)
-    {
-        $tasks = Task::find($id);
-        return view('learn.detalhes')->with('tasks', $tasks);
-    }
-    public function delete($id)
-    {
-        $tasks = Task::find($id);
-        $tasks->delete();
-        return redirect()->action('LearnController@perfil');
+    public function stars(){
+        $star = auth()->user()->stars;
+        return $star;
     }
 }

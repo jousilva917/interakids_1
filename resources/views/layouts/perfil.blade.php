@@ -2,7 +2,7 @@
     <head>
         @include('partials.perfilHead')
     </head>
-    <body  class="fixed-nav bg-dark" id="page-top">
+    <body  class="fixed-nav bg-dark" id="page-top"  onload="mostra()">
                 <!-- Navigation-->
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
                         <a class="navbar-brand" href="{{url ('home')}}">{{config('app.name' , 'InteraKids')}}</a>
