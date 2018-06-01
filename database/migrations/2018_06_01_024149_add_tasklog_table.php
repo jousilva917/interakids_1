@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class AddTasklogTable extends Migration
 {
-    /**
+       /**
      * Run the migrations.
      *
      * @return void
@@ -17,12 +17,8 @@ class AddTasklogTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('isleone_id')->unsigned();
-            $table->foreign('isleone_id')->references('id')->on('isleone')->onDelete('cascade');
-            $table->integer('isletwo_id')->unsigned();
-            $table->foreign('isletwo_id')->references('id')->on('isletwo')->onDelete('cascade');
-            $table->integer('islethree_id')->unsigned();
-            $table->foreign('islethree_id')->references('id')->on('islethree')->onDelete('cascade');
+            $table->integer('task_id')->unsigned();
+            $table->foreign('task_id')->references('id')->on('task')->onDelete('cascade');
             $table->boolean('completed');
         });
     }

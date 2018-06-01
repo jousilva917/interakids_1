@@ -22,10 +22,8 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        $isleOne = IsleOne::all();
-        $isleTwo = IsleTwo::all();
-        $isleThree = IsleThree::all();
-        return view('learn.perfil')->with('isleone', $isleOne)->with('isletwo', $isleTwo)->with('islethree', $isleThree);
+        
+        return view('learn.perfil');
     }
     public function stars(){
         $star = auth()->user()->stars;

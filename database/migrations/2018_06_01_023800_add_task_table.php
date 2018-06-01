@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddIsleThreeTable extends Migration
+class AddTaskTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddIsleThreeTable extends Migration
      */
     public function up()
     {
-        Schema::create('Islethree', function(Blueprint $table){
+        Schema::create('task',function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
             $table->string('description');
@@ -30,6 +30,6 @@ class AddIsleThreeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfexists('islethree');
+        Schema::dropIfexists('task');
     }
 }
