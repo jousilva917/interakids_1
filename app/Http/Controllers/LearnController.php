@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\TaskRequest;
 use App\User;
-use App\Task;
+use App\IsleOne;
+use App\IsleTwo;
+use App\IsleThree;
 
 
 class LearnController extends Controller
@@ -20,8 +22,10 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        $user = User::all();
-        return view('learn.perfil')->with('user', $user);
+        $isleOne = IsleOne::all();
+        $isleTwo = IsleTwo::all();
+        $isleThree = IsleThree::all();
+        return view('learn.perfil')->with('isleone', $isleOne)->with('isletwo', $isleTwo)->with('islethree', $isleThree);
     }
     public function stars(){
         $star = auth()->user()->stars;

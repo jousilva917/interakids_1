@@ -9,8 +9,10 @@
             <th>Ação</th>
         </tr>
         <tr>
-            <td>Tarefa 1</td>
-            <td>Aprenda Variáveis</td>
+        <td>Nome</td>
+            <td>{{$isleone->}}</td>
+            <td>{{$isletwo}}</td>
+            <td>{{$islethree}}</td>
             <td><a class="btn btn-success">Aprender</a></td>
         </tr>
     </table>
