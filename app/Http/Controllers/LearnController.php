@@ -21,8 +21,8 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        
-        return view('learn.perfil');
+        $task = Task::whereIn('id', [1,12,23])->get();
+        return view('learn.perfil')->with('task',$task);
     }
     public function stars(){
         $star = auth()->user()->stars;

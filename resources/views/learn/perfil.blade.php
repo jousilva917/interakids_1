@@ -9,12 +9,12 @@
             <th>Ação</th>
         </tr>
         <tr>
-        <td>Nome</td>
-            <td>{{$isleone->}}</td>
-            <td>{{$isletwo}}</td>
-            <td>{{$islethree}}</td>
+            @foreach($task as $t)
+            <td>{{$t->name}}</td>
+            <td>{{$t->description}}</td>
             <td><a class="btn btn-success">Aprender</a></td>
         </tr>
+        @endforeach
     </table>
 </div>
 @endsection
