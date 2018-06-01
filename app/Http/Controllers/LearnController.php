@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\TaskRequest;
 use App\User;
-use App\IsleOne;
-use App\IsleTwo;
-use App\IsleThree;
+use App\Task;
+
 
 
 class LearnController extends Controller
