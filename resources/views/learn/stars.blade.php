@@ -1,4 +1,4 @@
-<script>
+<!--<script>
    function mostra(){
        $(window).on('load',function(){
     $.ajax({
@@ -10,4 +10,4 @@
     });
 });
 };
-</script>
+</script>-->
