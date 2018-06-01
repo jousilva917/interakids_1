@@ -9,12 +9,22 @@
             <th>Ação</th>
         </tr>
         <tr>
-            @foreach($task as $t)
-            <td>{{$t->name}}</td>
-            <td>{{$t->description}}</td>
+            @for($i = 1; $i<=3;$i++)
+            @if($i == 1)
+            <td>Ilha 1</td>
+            <td>Variaveis</td>
             <td><a class="btn btn-success">Aprender</a></td>
+            @elseif($i == 2)
+                <td>Ilha 2</td>
+                <td>Funções</td>
+                <td><a class="btn btn-success">Aprender</a></td>
+            @else
+                <td>Ilha 3</td>
+                <td>Loop</td>
+                <td><a class="btn btn-success">Aprender</a></td>
+            @endif
         </tr>
-        @endforeach
+        @endfor
     </table>
 </div>
 @endsection
