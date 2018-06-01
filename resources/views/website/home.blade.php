@@ -35,7 +35,7 @@
     </div>
   </header>
   <!--Video/Text-->
-  <div class="container-fluid text-center" id="video-text">
+  <div class="container text-center" id="video-text">
     <div class="row" id="row-video">
       <div class="col-sm-6">
         <iframe width="460" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY">
@@ -55,7 +55,7 @@
       </div>
     </div>
     <!--Grid-->
-    <div class="container-fluid gallery-container">
+    <div class="container gallery-container">
       <h1>Grid</h1>
       <p class="page-description text-center">Grid Layout </p>
       <div class="tz-gallery">
@@ -100,7 +100,7 @@
       </div>
     </div>
     <!--about us-->
-    <div class="container-fluid" id="about-us">
+    <div class="container" id="about-us">
       <div class="row">
         <div class="col-sm-12">
           <h1>About us</h1>
