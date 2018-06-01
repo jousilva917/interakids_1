@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTaskTable extends Migration
+class AddIsleOneTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class AddTaskTable extends Migration
      */
     public function up()
     {
-        Schema::create('task', function(Blueprint $table){
+        Schema::create('isleOne', function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
+            $table->string('description');
             $table->integer('level');
-            $table->integer('stars_reward')->nullable();
+            $table->integer('stars_reward');
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class AddTaskTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('task');
+        Schema::dropIfexists('isleOne');
     }
 }
