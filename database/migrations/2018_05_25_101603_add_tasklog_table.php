@@ -17,12 +17,8 @@ class AddTasklogTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('isleOne_id')->unsigned();
-            $table->foreign('isleOne_id')->references('id')->on('isleOne')->onDelete('cascade');
-            $table->integer('isleTwo_id')->unsigned();
-            $table->foreign('isleTwo_id')->references('id')->on('isleTwo')->onDelete('cascade');
-            $table->integer('isleThree_id')->unsigned();
-            $table->foreign('isleThree_id')->references('id')->on('isleThree')->onDelete('cascade');
+            $table->integer('isleone_id')->unsigned();
+            $table->foreign('isleone_id')->references('id')->on('isleone')->onDelete('cascade');
             $table->boolean('completed');
         });
     }

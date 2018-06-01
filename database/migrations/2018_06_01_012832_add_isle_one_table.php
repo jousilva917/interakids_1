@@ -13,7 +13,7 @@ class AddIsleOneTable extends Migration
      */
     public function up()
     {
-        Schema::create('isleOne', function(Blueprint $table){
+        Schema::create('isleone', function(Blueprint $table){
             $table->increments('id');
             $table->string('name');
             $table->string('description');
@@ -30,6 +30,6 @@ class AddIsleOneTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfexists('isleOne');
+        Schema::dropIfexists('isleone');
     }
 }
