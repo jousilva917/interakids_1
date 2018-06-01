@@ -18,8 +18,6 @@ class AddTaskTable extends Migration
             $table->string('name');
             $table->integer('level');
             $table->integer('stars_reward')->nullable();
-            $table->integer('min_stars')->default(1);
-            $table->integer('max_stars')->default(3);
             $table->timestamps();
         });
     }
