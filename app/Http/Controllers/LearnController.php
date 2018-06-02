@@ -31,10 +31,12 @@ class LearnController extends Controller
         $task->task_id = $request->input('task_id');
         $task->completed = 0;
         $task->save();
-        return redirect();
+
+        $tasks = Task::select('name')->where('id' ,[1])->limit(1)->first();
+        return $this->task($tasks->name);
     }
     public function task($id){
        $task = Task::find($id);
-       return view('learn.task')->with('task', $task);
+       return view('learn.task')->with('tasks', $task);
     }
 }
