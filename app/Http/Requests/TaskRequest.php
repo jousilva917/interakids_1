@@ -27,8 +27,7 @@ class TaskRequest extends FormRequest
     public function rules()
     {
         return [
-            'titulo' => 'max:255',
-            'texto' => 'max:255'
+            'task_id' => 'required|integer'
         ];
     }
 

@@ -12,7 +12,10 @@
         <tr>
         <td>{{$t->name}}</td>
         <td>{{$t->description}}</td>
-        <td><a href="/level/{{$t->id}}" class="btn btn-success">Aprenda</a></td>
+        <td><form action="{{action('LearnController@taskLearn')}}" method="post">
+            @csrf
+            <input type="hidden" name="task_id" value="{{$t->id}}">
+            <input type="submit" class="btn btn-success" value="Aprender"></form></td>
            </tr>
         </tr>
         @endforeach
