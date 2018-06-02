@@ -32,8 +32,7 @@ class LearnController extends Controller
         $task->completed = 0;
         $task->save();
 
-        $tasks = Task::select('name')->where('id' ,[1])->limit(1)->first();
-        return $this->task($tasks->name);
+        return redirect()->action('LearnController@task');
     }
     public function task($id){
        $task = Task::find($id);
