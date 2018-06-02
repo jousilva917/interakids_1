@@ -10,13 +10,9 @@
         </tr>
         @foreach($task as $t)
         <tr>
-        <td>{{$t->name}}</td>
-        <td>{{$t->description}}</td>
-        <td><form action="{{action('LearnController@taskLearn')}}" method="post">
-            @csrf
-            <input type="hidden" name="task_id" value="{{$t->id}}">
-            <input type="submit" class="btn btn-success" value="Aprender"></form></td>
-           </tr>
+            <td>{{$t->name}}</td>
+            <td>{{$t->description}}</td>
+            <td><a class="btn btn-success" href="/task/{{$t->id}}">Aprenda</a></td>
         </tr>
         @endforeach
     </table>

@@ -36,6 +36,6 @@ class LearnController extends Controller
     }
     public function task($id){
        $task = Task::find($id);
-       return view('learn.task')->with('tasks', $task);
+       return view('learn.task')->with('task', $task);
     }
 }
