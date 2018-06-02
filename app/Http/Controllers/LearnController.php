@@ -21,11 +21,11 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        $task = Task::whereIn('id', [1,12,23])->get();
+        $task = Task::orderBy('id', 'ASC')->paginate(5);
         return view('learn.perfil')->with('task',$task);
     }
-    public function stars(){
-        $star = auth()->user()->stars;
-        return $star;
+    public function task($id){
+       $task = Task::find($id);
+       return view('learn.task')->with('task', $task);
     }
 }

@@ -8,23 +8,15 @@
             <th>Descrição</th>
             <th>Ação</th>
         </tr>
+        @foreach($task as $t)
         <tr>
-            @for($i = 1; $i<=3;$i++)
-            @if($i == 1)
-            <td>Ilha 1</td>
-            <td>Aprenda variáveis</td>
-            <td><a class="btn btn-success">Aprender</a></td>
-            @elseif($i == 2)
-                <td>Ilha 2</td>
-                <td>Aprenda funções</td>
-                <td><a class="btn btn-success">Aprender</a></td>
-            @else
-                <td>Ilha 3</td>
-                <td>Aprenda repetições</td>
-                <td><a class="btn btn-success">Aprender</a></td>
-            @endif
+        <td>{{$t->name}}</td>
+        <td>{{$t->description}}</td>
+        <td><a href="/level/{{$t->id}}" class="btn btn-success">Aprenda</a></td>
+           </tr>
         </tr>
-        @endfor
+        @endforeach
     </table>
+    {{$task->links()}}
 </div>
 @endsection
