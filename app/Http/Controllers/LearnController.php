@@ -21,8 +21,7 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        $task = Task::orderBy('id', 'ASC')->paginate(5);
-        return view('learn.perfil')->with('task',$task);
+        return view('learn.perfil');
     }
     public function taskLearn(TaskRequest $request)
     {
@@ -34,8 +33,13 @@ class LearnController extends Controller
 
         return redirect()->action('LearnController@task');
     }
-    public function task($id){
-       $task = Task::find($id);
-       return view('learn.task')->with('task', $task);
+    public function isleOne( ){
+        $task = Task::orderBy('id', 'ASC')->paginate(5);
+        return view('learn.isleOne')->with('task',$task);
+    }
+    public function task($id)
+    {
+        $task = Task::find($id);
+        return view('learn.task')->with('task',$task);
     }
 }
