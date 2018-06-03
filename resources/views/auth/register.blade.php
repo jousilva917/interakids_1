@@ -10,7 +10,6 @@
                 <div class="form-title-row">
                     <h1>Criar Nova Conta</h1>
                 </div>
-
                 <div class="form-row">
                     <label>
                         <span>{{ __('Nome') }}</span>
@@ -44,6 +43,15 @@
                     </span>
                     @endif
                 </div>
+
+                <div class="form-row">
+                    <label>
+                    <span>{{ __('Confirmar senha') }}</span></label>
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                    
+                </div>
+
+
                 <div class="form-row">
                     <label class="form-checkbox">
                         <input type="checkbox" name="checkbox" checked>
