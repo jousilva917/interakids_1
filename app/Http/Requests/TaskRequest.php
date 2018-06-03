@@ -27,7 +27,7 @@ class TaskRequest extends FormRequest
     public function rules()
     {
         return [
-            'task_id' => 'required|integer'
+            'id' => 'required|integer|exists:task,id'
         ];
     }
 
