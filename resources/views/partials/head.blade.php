@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
 <link href="{{ asset('css/site/app.css') }}" rel="stylesheet">
+<link href="{{ asset('css/site/login.css') }}" rel="stylesheet">
 <link href="{{ asset('scss/style.scss') }}" rel="stylesheet">
 <link href="{{ asset('css/site/login-register.css') }}" rel="stylesheet">
 <link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
