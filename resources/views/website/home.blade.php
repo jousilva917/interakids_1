@@ -1,111 +1,48 @@
 @extends('layouts.website') @section('content')
 
 <div id="loader" class="loader"></div>
-<div style="display:none;" id="tudo_page">
-
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <!--Modal-->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-         Lets-play
-        </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+<div style="display:none;" id="page-secundaria">
+  <!--HEADER-->
+<header id="home-section">
+            <div class="dark-overlay">
+              <div class="Container">
+                  <div class="row">
+                      <div class="col text-center"  style="position: absolute; bottom: 100px;" >
+                    <button type="button" class="btn btn-outline-light ">Primary</button>
+                </div>
+                </div>
             </div>
-          </div>
+            </div>
+          </header>
+          <section id="section-head" class="bg-secondary">
+        <div class="container">
+            <div class="row ">
+                <div class="col text-center">
+                    <div class="p-5">
+                            <h1 class="display-4">InteraKids</h1>
+                            <p class="lead">Lorem ipsum in phasellus urna hac diam ligula purus sapien, ac ultricies eu netus convallis lacinia etiam hac tellus, tempus eros luctus placerat vulputate diam malesuada nullam. imperdiet porta scelerisque himenaeos vestibulum </p>
+                            <a href="#" class="btn btn-outline-light">lets play a game</a>
+                        </div>
+                    
+                </div>
+
+            </div>
         </div>
-        <!--/modal-->
-      </div>
-    </div>
-  </header>
-  <!--Video/Text-->
-  <div class="container text-center" id="video-text">
-    <div class="row" id="row-video">
-      <div class="col-sm-6">
-        <iframe width="460" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-        </iframe>
-      </div>
-    </div>
-    <div class="row" id="row-text">
-      <div class="col-sm-12">
-        <h1>InteraKids</h1>
-      </div>
-      <div class="col-sm-12">
-        <p>Lorem ipsum conubia pellentesque maecenas lorem lobortis etiam vulputate ullamcorper, aliquet fringilla ante condimentum
-          nibh aenean risus vivamus cursus, est vel sapien pretium eros tristique mattis amet.</p>
-      </div>
-      <div class="col-sm-12">
-        <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-      </div>
-    </div>
-    <!--Grid-->
-    <div class="container gallery-container">
-      <h1>Grid</h1>
-      <p class="page-description text-center">Grid Layout </p>
-      <div class="tz-gallery">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <a class="lightbox" href="#">
-              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
-                alt="Park">
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a class="lightbox" href="#">
-              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
-                alt="Bridge">
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <a class="lightbox" href="#">
-              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
-                alt="Tunnel">
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a class="lightbox" href="#">
-              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
-                alt="Coast">
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a class="lightbox" href="#">
-              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
-                alt="Rails">
-            </a>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <a class="lightbox" href="#">
-              <img src="https://res.cloudinary.com/teepublic/image/private/s--c8poegeA--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1507272397/production/designs/1952565_1.jpg"
-                alt="Traffic">
-            </a>
-          </div>
+    </section>
+
+<div class="container-fluid" id="row-video">
+    <div class="row text-center justify-content" id="row-col" >
+        <div class="col-sm-6 col-md-6">
+            <h2 class="display-4">If you programing</h2>
+           <p class="lead">Lorem ipsum in phasellus urna hac diam ligula purus sapien, ac ultricies eu netus convallis lacinia etiam hac tellus, tempus eros luctus placerat vulputate diam malesuada nullam. imperdiet porta scelerisque himenaeos vestibulum </p>
+        <a href="#" class="btn btn-outline-light">Lets play</a>
         </div>
-      </div>
-    </div>
-    <!--about us-->
-    <div class="container" id="about-us">
-      <div class="row">
-        <div class="col-sm-12">
-          <h1>About us</h1>
+        <div class="col-sm-6 col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                      </div>
         </div>
-      </div>
-    </div>
-    @endsection
+   
+    </div>  
   </div>
+  @endsection

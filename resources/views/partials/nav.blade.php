@@ -1,34 +1,34 @@
 <!-- Navegação -->
 
-<nav class="navbar navbar-expand-lg bg-dark fixed-top " id="mainNav">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
 <div class="container" >
     <a class="navbar-brand" href="{{ url('/home') }}">
         {{ config('app.name', 'InteraKids') }}
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+    <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse justify-content-between " id="navbarSite">
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item {{Request::is('home') ? 'active': ''}}">
-                <a id="btn" class="nav-link" href="{{ action('HomeController@index') }}"> Inicio </a>
+                <a class="nav-link" href="{{ action('HomeController@index') }}"> Inicio </a>
             </li>
             <li class="nav-item {{Request::is('aprenda') ? 'active': ''}}">
-                <a id="btn" class="nav-link" href="{{ action('LearnController@aprenda') }}">Explore</a>
+                <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Explore</a>
             </li>
             <li class="nav-item {{Request::is('contact') ? 'active': ''}}">
-                <a id="btn" class="nav-link" href="{{ action('HomeController@contact') }}">Contato</a>
+                <a class="nav-link" href="{{ action('HomeController@contact') }}">Contato</a>
             </li>
             <li class="nav-item {{Request::is('sobre') ? 'active': ''}}">
-                <a id="btn" class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
+                <a class="nav-link" href="{{ action('HomeController@sobre') }}">Sobre</a>
             </li>
             <!-- Authentication Links -->
             @guest
             <li class="nav-item {{Request::is('login') ? 'active': ''}}">
-                <a id="btn" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
             </li>
             <li class="nav-item {{Request::is('register') ? 'active': ''}}">
-                <a id="btn" class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
+                <a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a>
             </li>
         </ul>
         @else

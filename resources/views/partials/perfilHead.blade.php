@@ -7,7 +7,7 @@
 <!-- Custom fonts for this template-->
 <link href="{{asset('css/learn/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 <!-- Page level plugin CSS-->
-<link href="{{asset('css/learn/dataTables.bootstrap4.css')}}" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 <!-- Custom styles for this template-->
 <link href="{{asset('css/learn/sb-admin.css')}}" rel="stylesheet">
 <!-- Blockly -->

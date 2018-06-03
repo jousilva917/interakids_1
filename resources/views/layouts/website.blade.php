@@ -2,7 +2,7 @@
     <head>
     @include('partials.head')
     </head>
-    <body>
+    <body id="page-principal">
         @include('partials.nav')
      
         @yield('content')

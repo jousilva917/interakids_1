@@ -1,0 +1,38 @@
+// Main Sass File
+$bg-color:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$dark-overlay:rgba(0,0,0,0.8);
+#page-principal{
+    background: $bg-color;
+    color: $font-color;
+    height: 1800px;
+}
+.navbar{
+    border-bottom:$primary-color 3px solid;
+    opacity: 0.8; 
+}
+#home-section{
+    background: url('https://i.ytimg.com/vi/7IRyIfo1M0s/maxresdefault.jpg') no-repeat;
+    min-height: 800px;
+    background-size:cover;
+    background-attachment: fixed; 
+    background-position:center; 
+    .dark-overlay{
+        background-color:$dark-overlay;
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        min-height:800px;
+    }
+}
+#row-video{
+    background: $primary-color;
+    min-height: 500px;
+}
+#row-col{
+ margin:0px;
+ padding: 60px;
+ 
+ }
