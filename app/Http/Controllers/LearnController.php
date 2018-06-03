@@ -21,25 +21,23 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        return view('learn.perfil');
+        $task = Task::orderBy('id', 'ASC')->paginate(5);
+        return view('learn.perfil')->with('task',$task);
     }
     public function taskLearn(TaskRequest $request)
     {
-        $task = new TaskLog;
+        $task_id = $request->id;  
+        $task = new TaskLog();
         $task->user_id = auth()->user()->id;
-        $task->task_id = $request->input('task_id');
+        $task->task_id = $task_id;
         $task->completed = 0;
-        $task->save();
 
-        return redirect()->action('LearnController@task');
-    }
-    public function isleOne( ){
-        $task = Task::orderBy('id', 'ASC')->paginate(5);
-        return view('learn.isleOne')->with('task',$task);
+
+        return view('learn.task');
     }
     public function task($id)
     {
         $task = Task::find($id);
-        return view('learn.task')->with('task',$task);
+            return view('learn.task')->with('task',$task);
     }
 }
