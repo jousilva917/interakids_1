@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
+#login{
+    position: absolute;
+    top:200px;
+    left: 200px;
+}
 .form-login{
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-
     font: bold 14px sans-serif;
     text-align: center;
 }
@@ -244,7 +247,11 @@
 
 
 
-
+#register{
+    position: absolute;
+    top:100px;
+    left: 200px; 
+}
 
 .form-register{
     max-width: 1000px;

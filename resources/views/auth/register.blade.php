@@ -1,7 +1,7 @@
 @extends('layouts.app') @section('conteudo')
 
 
-<div class="container">
+<div class="container" id="register">
     <form method="post" action="{{ route('register') }}">
         @csrf
         <div class="form-register-with-email">
