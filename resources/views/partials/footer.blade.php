@@ -1,4 +1,4 @@
-
+<div class="container-fluid">
  <footer id="myFooter">
                 <div class="container">
                     <div class="row">
@@ -27,3 +27,4 @@
                     <p>© 2018 Feito com amor e cofee </p>
                 </div>
             </footer>
+            </div>
