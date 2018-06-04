@@ -15,10 +15,6 @@ class LearnController extends Controller
     {
         $this->middleware('auth');
     }
-    public function aprenda()
-    {
-        return view('learn.index');
-    }
     public function perfil()
     {
         $task = Task::orderBy('id', 'ASC')->paginate(5);

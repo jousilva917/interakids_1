@@ -14,7 +14,7 @@ Route::get('/sobre', 'HomeController@sobre');
 Route::get('/contato', 'HomeController@contact');
 Route::post('/submit', 'HomeController@submit');
 //LearnController
-Route::get('/aprenda', 'LearnController@aprenda');
+Route::get('/explore', 'HomeController@explore');
 Route::get('/task/Learn', 'LearnController@taskLearn');
 Route::get('/task/{id}','LearnController@task');
 //Sistema de cadastro

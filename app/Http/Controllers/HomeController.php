@@ -23,6 +23,10 @@ class HomeController extends Controller
     {
         return view('website.contact');
     }
+    public function explore()
+    {
+        return view('website.explore');
+    }
     public function submit(Request $request)
     {
         $sent = $request->all();

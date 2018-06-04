@@ -19,6 +19,9 @@ class AddTaskTable extends Migration
             $table->string('description');
             $table->integer('level');
             $table->integer('stars_reward');
+            $table->integer('stars_required');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

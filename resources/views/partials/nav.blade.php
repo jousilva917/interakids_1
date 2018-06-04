@@ -13,10 +13,10 @@
             <li class="nav-item {{Request::is('home') ? 'active': ''}}">
                 <a class="nav-link" href="{{ action('HomeController@index') }}"> Inicio </a>
             </li>
-            <li class="nav-item {{Request::is('aprenda') ? 'active': ''}}">
-                <a class="nav-link" href="{{ action('LearnController@aprenda') }}">Explore</a>
+            <li class="nav-item {{Request::is('explore') ? 'active': ''}}">
+                <a class="nav-link" href="{{ action('HomeController@explore') }}">Explore</a>
             </li>
-            <li class="nav-item {{Request::is('contact') ? 'active': ''}}">
+            <li class="nav-item {{Request::is('contato') ? 'active': ''}}">
                 <a class="nav-link" href="{{ action('HomeController@contact') }}">Contato</a>
             </li>
             <li class="nav-item {{Request::is('sobre') ? 'active': ''}}">
