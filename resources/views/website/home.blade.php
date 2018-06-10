@@ -78,21 +78,10 @@
             </div>
         </div>
     </section>
-    <div class="container-fluid" id="about">
-        <div class="card" style="width: 300px; color: black;">
-            <img class="card-img-top img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD"
-                alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title display-4">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-
-        </div>
-    </div>
+    
 <!--About-us-->
-    <div class="services-container section-container" id="about-us">
-        <div class="container">
+    <div class="services-container section-container">
+        <div class="container-fluid">
         </div>
     </div>
 
