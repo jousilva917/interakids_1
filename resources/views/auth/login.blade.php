@@ -31,6 +31,15 @@
                     </span>
                     @endif
                 </div>
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-4">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> {{ __('Manter conectado') }}
+                            </label>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="form-row">
                     <button type="submit">{{ __('Login') }}</button>
