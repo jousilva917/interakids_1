@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model
 {
     protected $table = 'task';
-    public function task()
+    
+    public function tasklog()
     {
-        $this->belongsTo('App\User');
+        $this->belongsTo('App\TaskLog');
     }
 }

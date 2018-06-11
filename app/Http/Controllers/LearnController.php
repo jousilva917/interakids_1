@@ -17,8 +17,13 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        $task = Task::orderBy('id', 'ASC')->paginate(5);
-        return view('learn.perfil')->with('task',$task);
+        
+        return view('learn.perfil');
+    }
+    public function isle()
+    {
+        $task = Task::all();
+        return view('learn.task')->with('task',$task);
     }
     public function taskLearn(TaskRequest $request)
     {
