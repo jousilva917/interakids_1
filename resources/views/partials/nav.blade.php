@@ -1,5 +1,4 @@
 <!-- Navegação -->
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
 <div class="container" >
     <a class="navbar-brand" href="{{ url('/home') }}">

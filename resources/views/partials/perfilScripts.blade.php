@@ -1,6 +1,3 @@
-
-<!-- Scripts -->
-<!-- Bootstrap core JavaScript-->
 <script src="{{asset('js/learn/jquery.min.js')}}"></script>
 <script src="{{asset('js/learn/bootstrap.bundle.min.js')}}"></script>
 <!-- Core plugin JavaScript-->
