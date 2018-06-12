@@ -56,6 +56,6 @@ class HomeController extends Controller
         }
         $user->save();
 
-        return redirect('/perfil');
+        return $user->profile_image;
     }
 }
