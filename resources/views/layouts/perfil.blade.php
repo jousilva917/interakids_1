@@ -2,7 +2,7 @@
     <head>
         @include('partials.perfilHead')
     </head>
-    <body  class="fixed-nav bg-dark" id="page-top"  onload="mostra()">
+    <body  class="fixed-nav bg-dark" id="page-top">
         @include('partials.perfilNav')
                       <div class="content-wrapper">
                         <div class="container-fluid">

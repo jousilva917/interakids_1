@@ -55,7 +55,7 @@ class HomeController extends Controller
             $user->profile_image = $fileNameToStore;
         }
         $user->save();
-
-        return $user->profile_image;
+        $image = json_encode($user->profile_image);
+        return response()->json($image);
     }
 }

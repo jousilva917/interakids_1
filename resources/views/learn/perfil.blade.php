@@ -1,7 +1,7 @@
 @extends('layouts.perfil') @section('perfil')
 <div class="container mt-4">
     <div class="card mb-3 col-sm-3">
-        <img class="img-fluid rounded-circle" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="noImage">
+        <img class="img-fluid rounded-circle" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="noImage" id="pic">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile_pic">
             Mudar foto
         </button>
@@ -15,39 +15,35 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="{{action('HomeController@picture',[Auth::user()->id])}}" method="post" enctype="multipart/form-data">
+                    <form onsubmit="enviar()" method="post" enctype="multipart/form-data">
                             @csrf
-                            <input type="file" name="picture" id="">
+                            <input type="file" name="picture" id="picture">
+                    <input type="hidden" name="user_id" id="user_id" value="{{Auth()->user()->id}}">
                     </div>
                     <div class="container">
-            <div class="row">
-                <div class="col-sm-3 col-md-3 item">
-                    <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                    </a>
-                </div>
-                <div class="col-sm-3 col-md-3 item">
-                    <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                    </a>
-                </div>
-                <div class="col-sm-3 col-md-3 item">
-                    <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                    </a>
-                </div>
-                <div class="col-sm-3 col-md-3 item">
-                    <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                    </a>
-                </div>
-            </div>
-</div>
-
-
-
-
-
+                        <div class="row">
+                            <div class="col-sm-3 col-md-3 item">
+                                <a class="lightbox" href="#">
+                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3 item">
+                                <a class="lightbox" href="#">
+                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3 item">
+                                <a class="lightbox" href="#">
+                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
+                                </a>
+                            </div>
+                            <div class="col-sm-3 col-md-3 item">
+                                <a class="lightbox" href="#">
+                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="modal-footer"></div>
                     <input type="submit" class="btn btn-primary" value="Salvar">
                 </div>

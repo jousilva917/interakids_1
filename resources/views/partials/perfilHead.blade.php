@@ -12,11 +12,13 @@
 <link href="{{asset('css/learn/sb-admin.css')}}" rel="stylesheet">
 <link href="{{asset('css/blockly/style.css')}}" rel="stylesheet" type="text/css"/>
 <!-- Scripts -->
+<script src="{{asset('js/site/app.js')}}" defer></script>
 <script src="{{asset('js/blockly/blockly_compressed_horizontal.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/blockly/blockly_compressed_vertical.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/blockly/blocks_compressed.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/blockly/javascript_compressed.js')}}" type="text/javascript"></script>
 <script src="{{asset('storage/msg/js/pt-br.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/blockly/customblock.js'    )}}" type="text/javascript"></script>
+@include('learn.picture')
 
 
