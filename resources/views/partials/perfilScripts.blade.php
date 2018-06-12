@@ -11,3 +11,4 @@
 <!-- Custom scripts for this page-->
 <script src="{{asset('js/learn/sb-admin-datatables.min.js')}}"></script>
 <script src="{{asset('js/learn/sb-admin-charts.min.js')}}"></script>
+@include('learn.picture')
