@@ -34,28 +34,20 @@ class HomeController extends Controller
         Contact::create($sent);
         return redirect()->action('HomeController@contact')->with('success','Enviado com sucesso');
     }
-    public function picture(Request $request, $id){
-
-        if($request->hasFile('picture')){
-        $filenameWithExt = $request->file('picture')->getClientOriginalName();
-        //Get just file name
-        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-        //Get just Ext
-        $extension = $request->file('picture')->getClientOriginalExtension();
+    public function picture(Request $request)
+    {
+        $fileExt = ['png', 'jpeg','jpg'];
         // Filename to store
-        $fileNameToStore = $filename.'_'.time().'.'.$extension;
-        // Upload image
-        $path = $request->file('picture')->storeAS('public/profile_image' , $fileNameToStore);
-
-    } else {
-      $fileNameToStore = 'noimage.png';  
-    }
-        $user = Auth::user();
-        if($request->hasFile('picture')){
-            $user->profile_image = $fileNameToStore;
+        if(in_array(strtolower($request->file('picture')->getClientOriginalExtension()),$fileExt)){
+            // Upload image
+            $fileNameToStore = $request->file('picture')->getClientOriginalName();
+            $path = $request->file('picture')->storeAS('public/profile_image' , $fileNameToStore);
+        }else{
+            return redirect()->action('LearnController@perfil')->with('Insira uma imagem com os seguintes formatos', 'error');
         }
+        $user = Auth::user();
+        $user->profile_image = $fileNameToStore;
         $user->save();
-        $image = json_encode($user->profile_image);
-        return response()->json($image);
+        return redirect()->action('LearnController@perfil');
     }
 }

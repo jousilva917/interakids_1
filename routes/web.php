@@ -13,7 +13,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('/sobre', 'HomeController@sobre');
 Route::get('/contato', 'HomeController@contact');
 Route::post('/submit', 'HomeController@submit');
-Route::post('/picture/{id}','HomeController@picture');
+Route::post('/picture','HomeController@picture');
 //LearnController
 Route::get('/explore', 'HomeController@explore');
 Route::get('/isle', 'LearnController@isle');

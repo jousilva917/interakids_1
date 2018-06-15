@@ -15,28 +15,12 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                    <form onsubmit="enviar()" method="post" enctype="multipart/form-data">
+                    <form action="{{action('HomeController@picture',[auth()->user()->id])}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <input type="file" name="picture" id="picture">
-                    <input type="hidden" name="user_id" id="user_id" value="{{Auth()->user()->id}}">
                     </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-sm-3 col-md-3 item">
-                                <a class="lightbox" href="#">
-                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-md-3 item">
-                                <a class="lightbox" href="#">
-                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                                </a>
-                            </div>
-                            <div class="col-sm-3 col-md-3 item">
-                                <a class="lightbox" href="#">
-                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                                </a>
-                            </div>
                             <div class="col-sm-3 col-md-3 item">
                                 <a class="lightbox" href="#">
                                     <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
@@ -57,7 +41,6 @@
     </div>
 </div>
 </div>
-
 <div class="container mt-4">
     <div class="card border-dark mb-3 col-sm-3">
         <div class="card-header">
