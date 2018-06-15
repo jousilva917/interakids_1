@@ -39,6 +39,11 @@
         <h3>Estrelas: {{Auth()->user()->stars}}</h3>
         <a href="{{action('LearnController@isle')}}" class="btn btn-primary">Começar</a>
     </div>
+    @if(session('error'))
+    <div class="alert alert-danger mt-4">
+        {{session('error')}}
+    </div>
+    @endif
 </div>
 </div>
 <div class="container mt-4">

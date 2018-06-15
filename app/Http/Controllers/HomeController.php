@@ -43,7 +43,7 @@ class HomeController extends Controller
             $fileNameToStore = $request->file('picture')->getClientOriginalName();
             $path = $request->file('picture')->storeAS('public/profile_image' , $fileNameToStore);
         }else{
-            return redirect()->action('LearnController@perfil')->with('Insira uma imagem com os seguintes formatos', 'error');
+            return redirect()->action('LearnController@perfil')->with('error','Insira uma imagem com os seguintes formatos: png, jpeg ou jpg');
         }
         $user = Auth::user();
         $user->profile_image = $fileNameToStore;
