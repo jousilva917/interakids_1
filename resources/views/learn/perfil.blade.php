@@ -2,6 +2,7 @@
 <div class="container mt-4">
     <div class="card mb-3 col-sm-3">
         <img class="img-fluid rounded-circle" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="noImage" id="pic">
+        <!-- Modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile_pic">
             Mudar foto
         </button>
@@ -19,26 +20,18 @@
                             @csrf
                             <input type="file" name="picture" id="picture">
                     </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-3 col-md-3 item">
-                                <a class="lightbox" href="#">
-                                    <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer"></div>
+                     <div class="modal-footer"></div>
                     <input type="submit" class="btn btn-primary" value="Salvar">
                 </div>
                 </form>
             </div>
-
         </div>
+        <!-- Informações do usuário -->
         <h2>{{Auth()->user()->name}}</h2>
         <h3>Estrelas: {{Auth()->user()->stars}}</h3>
         <a href="{{action('LearnController@isle')}}" class="btn btn-primary">Começar</a>
     </div>
+    <!-- Caso a imagem esteja em um formato não suportado -->
     @if(session('error'))
     <div class="alert alert-danger mt-4">
         {{session('error')}}
@@ -46,6 +39,7 @@
     @endif
 </div>
 </div>
+<!-- Notificação -->
 <div class="container mt-4">
     <div class="card border-dark mb-3 col-sm-3">
         <div class="card-header">
@@ -60,9 +54,12 @@
             </div>
         </div>
     </div>
+    <!-- Tabela -->
+    <table class="table table-striped">
+        <tr>
+            <td>Nome</td>
+            <td>Descrição</td>
+        </tr>
+    </table>
 </div>
-
-
-
-
 @endsection
