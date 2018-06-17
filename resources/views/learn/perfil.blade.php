@@ -1,4 +1,15 @@
-@extends('layouts.perfil') @section('perfil')
+@extends('layouts.perfil') 
+
+@section('head')
+<title>{{config('app.name' , 'InteraKids')}}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{!! Minify::stylesheet(['/css/site/app.css', '/css/learn/sb-admin.css', '/css/learn/font-awesome.min.css'])->withFullUrl() !!}
+{!! Minify::javascript(['/js/site/app.js'])!!}
+@include('learn.picture')
+@endsection
+@section('perfil')
 <div class="container mt-4">
     <div class="card mb-3 col-sm-3">
         <img class="img-fluid rounded-circle" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="noImage" id="image_preview" name="image_preview">

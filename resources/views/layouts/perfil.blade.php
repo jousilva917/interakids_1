@@ -1,6 +1,6 @@
 <html>
     <head>
-        @include('partials.perfilHead')
+        @yield('head')
     </head>
     <body  class="fixed-nav bg-dark" id="page-top">
         @include('partials.perfilNav')
@@ -35,4 +35,3 @@
                       <script src="{{asset('js/site/app.js')}}"></script>
     </body>
 </html>
-@include('learn.picture')
