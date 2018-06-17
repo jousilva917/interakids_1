@@ -9,6 +9,7 @@
 {!! Minify::javascript(['/js/site/app.js'])!!}
 @include('learn.picture')
 @endsection
+
 @section('perfil')
 <div class="container mt-4">
     <div class="card mb-3 col-sm-3">

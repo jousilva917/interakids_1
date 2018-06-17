@@ -32,6 +32,5 @@
                           </div>
                         </div>
                       </div>
-                      <script src="{{asset('js/site/app.js')}}"></script>
     </body>
 </html>
