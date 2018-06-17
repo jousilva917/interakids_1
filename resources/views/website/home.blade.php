@@ -1,4 +1,12 @@
-@extends('layouts.website') @section('content')
+@extends('layouts.website') 
+@section('head')
+<title>{{ config('app.name', 'InteraKids') }}</title>
+{!! Minify::stylesheet(['/css/learn/font-awesome.min.css', '/css/site/app.css', 
+'/scss/style.scss', '/css/site/intro.css', '/css/site/temp.css'])->withFullUrl() !!}
+
+{!! Minify::javascript(['/js/site/app.js', '/js/site/intro.js'])->withFullUrl() !!}
+@endsection
+@section('content')
 
 <div id="loader" class="loader"></div>
 <div class="container-fluid" style="display:none;" id="page-secundaria">

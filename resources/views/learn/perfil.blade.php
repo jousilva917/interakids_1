@@ -1,7 +1,7 @@
 @extends('layouts.perfil') @section('perfil')
 <div class="container mt-4">
     <div class="card mb-3 col-sm-3">
-        <img class="img-fluid rounded-circle" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="noImage" id="pic">
+        <img class="img-fluid rounded-circle" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="noImage" id="image_preview" name="image_preview">
         <!-- Modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile_pic">
             Mudar foto
@@ -16,12 +16,12 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                    <form action="{{action('HomeController@picture',[auth()->user()->id])}}" method="post" enctype="multipart/form-data">
+                        <form id="submit_form" method="post"> 
                             @csrf
-                            <input type="file" name="picture" id="picture">
-                    </div>
+                            <input type="file" name="image_file" id="image_file" />  
+                    </div>  
                      <div class="modal-footer"></div>
-                    <input type="submit" class="btn btn-primary" value="Salvar">
+                     <input type="submit" name="upload_button" class="btn btn-info" value="Salvar" />  
                 </div>
                 </form>
             </div>
@@ -54,12 +54,5 @@
             </div>
         </div>
     </div>
-    <!-- Tabela -->
-    <table class="table table-striped">
-        <tr>
-            <td>Nome</td>
-            <td>Descrição</td>
-        </tr>
-    </table>
 </div>
 @endsection

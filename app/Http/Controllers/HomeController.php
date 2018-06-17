@@ -38,16 +38,16 @@ class HomeController extends Controller
     {
         $fileExt = ['png', 'jpeg','jpg'];
         // Filename to store
-        if(in_array(strtolower($request->file('picture')->getClientOriginalExtension()),$fileExt)){
+        if(in_array(strtolower($request->file('image_file')->getClientOriginalExtension()),$fileExt)){
             // Upload image
-            $fileNameToStore = $request->file('picture')->getClientOriginalName();
-            $path = $request->file('picture')->storeAS('public/profile_image' , $fileNameToStore);
+            $fileNameToStore = $request->file('image_file')->getClientOriginalName();
+            $path = $request->file('image_file')->storeAS('public/profile_image' , $fileNameToStore);
         }else{
             return redirect()->action('LearnController@perfil')->with('error','Insira uma imagem com os seguintes formatos: png, jpeg ou jpg');
         }
         $user = Auth::user();
         $user->profile_image = $fileNameToStore;
         $user->save();
-        return redirect()->action('LearnController@perfil');
+        return response()->json($fileNameToStore);
     }
 }

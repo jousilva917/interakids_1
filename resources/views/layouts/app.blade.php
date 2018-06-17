@@ -1,6 +1,6 @@
 <html>
 <head>
-    @include('partials.head')
+    @yield('head')
 </head>
  <body>
     @include('partials.nav')

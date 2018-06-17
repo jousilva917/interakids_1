@@ -1,6 +1,13 @@
-@extends('layouts.app') @section('conteudo')
+@extends('layouts.app') 
 
+@section('head')
+<title>{{ config('app.name', 'InteraKids') }}</title>
+{!! Minify::stylesheet(['/css/site/app.css', '/scss/style.scss', 
+'/css/site/temp.css', '/css/site/login.css'])->withFullUrl() !!}
 
+{!! Minify::javascript(['/js/site/app.js',])->withFullUrl() !!}
+@endsection
+@section('conteudo')
 <div class="container" id="register">
     <form method="post" action="{{ route('register') }}">
         @csrf

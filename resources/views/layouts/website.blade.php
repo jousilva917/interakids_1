@@ -1,14 +1,11 @@
 <html>
     <head>
-    @include('partials.head')
+    @yield('head')
     </head>
     <body id="page-principal">
         @include('partials.nav')
      
         @yield('content')
-
-
-
         
         @include('partials.footer')
     </body>

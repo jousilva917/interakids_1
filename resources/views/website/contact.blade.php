@@ -1,4 +1,11 @@
-@extends('layouts.website') @section('content')
+@extends('layouts.website')
+
+@section('head')
+{!! Minify::stylesheet(['/css/site/app.css', '/scss/style.scss', '/css/site/temp.css'])->withFullUrl() !!}
+
+{!! Minify::javascript(['/js/site/app.js', '/js/site/intro.js', '/js/site/contact.js'])->withFullUrl() !!}
+@endsection
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-5">

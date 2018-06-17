@@ -32,6 +32,7 @@
                           </div>
                         </div>
                       </div>
-        @include('partials.perfilScripts')
+                      <script src="{{asset('js/site/app.js')}}"></script>
     </body>
 </html>
+@include('learn.picture')
