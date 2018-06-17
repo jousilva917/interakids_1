@@ -9,32 +9,32 @@
     <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
         <a class="nav-link" href="{{url('perfil')}}">
-          <i class="fas fa-user"></i>
+          <i class="fa fa-user"></i>
           <span class="nav-link-text">Perfil</span>
         </a>
       </li>
 
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
         <a class="nav-link" href="charts.html">
-          <i class="fas fa-gamepad"></i>
+          <i class="fa fa-gamepad"></i>
           <span class="nav-link-text">Jogar</span>
         </a>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
         <a class="nav-link" href="charts.html">
-          <i class="fas fa-gamepad"></i>
+          <i class="fa fa-gamepad"></i>
           <span class="nav-link-text">algo</span>
         </a>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
         <a class="nav-link" href="charts.html">
-          <i class="fas fa-gamepad"></i>
+          <i class="fa fa-gamepad"></i>
           <span class="nav-link-text">algo</span>
         </a>
       </li>
       <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
         <a class="nav-link" href="charts.html">
-          <i class="fas fa-gamepad"></i>
+          <i class="fa fa-gamepad"></i>
           <span class="nav-link-text">algo</span>
         </a>
       </li>
