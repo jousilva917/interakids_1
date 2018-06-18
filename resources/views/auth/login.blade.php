@@ -25,7 +25,7 @@
 
                 <div class="form-row">
                     <label>
-                        <span>{{ __('Endereço de Email') }}</span </label>
+                        <span>{{ __('Endereço de Email') }}</span> </label>
                         <input type="email" name="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}"
                             required autofocus> @if ($errors->has('email'))
                         <span class="invalid-feedback">

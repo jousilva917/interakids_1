@@ -1,16 +1,12 @@
-@extends('layouts.website') 
-
-@section('head')
+@extends('layouts.website') @section('head')
 <title>{{config('app.name' , 'InteraKids')}}</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{!! Minify::stylesheet([ '/css/site/app.css',  '/scss/style.scss', '/css/site/intro.css', '/css/site/temp.css'])->withFullUrl() !!}
-
-{!! Minify::javascript(['/js/site/app.js', '/js/site/intro.js'])->withFullUrl() !!}
-@endsection
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+{!! Minify::stylesheet([ '/css/site/app.css', '/scss/style.scss', '/css/site/intro.css', '/css/site/temp.css'])->withFullUrl()!!} 
+{!! Minify::javascript(['/js/site/app.js', '/js/site/intro.js'])->withFullUrl() !!} 
+@endsection 
 @section('content')
-
 <div id="loader" class="loader"></div>
 <div class="container-fluid" style="display:none;" id="page-secundaria">
     <!--HEADER-->
@@ -36,13 +32,10 @@
                             scelerisque himenaeos vestibulum </p>
                         <a href="#" class="btn btn-outline-light">lets play a game</a>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
-
     <div class="container-fluid" id="row-video">
         <div class="row text-center justify-content" id="row-col">
             <div class="col-sm-6 col-md-6">
@@ -57,7 +50,6 @@
                     <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
                 </div>
             </div>
-
         </div>
     </div>
     <section class="gallery-block grid-gallery">
@@ -89,14 +81,10 @@
             </div>
         </div>
     </section>
-    
-<!--About-us-->
+    <!--About-us-->
     <div class="services-container section-container">
         <div class="container-fluid">
         </div>
     </div>
-
-
 </div>
-
 @endsection
