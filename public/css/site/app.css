@@ -10417,3 +10417,41 @@ a.text-dark:focus {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+#page-principal {
+  background: #333;
+  color: #fff;
+  height: 1800px;
+}
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8;
+}
+
+#home-section {
+  background: url("https://i.ytimg.com/vi/7IRyIfo1M0s/maxresdefault.jpg") no-repeat;
+  min-height: 800px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#home-section .dark-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 800px;
+}
+
+#row-video {
+  background: #008ed6;
+  min-height: 500px;
+}
+
+#row-col {
+  margin: 0px;
+  padding: 60px;
+}
+
