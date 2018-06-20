@@ -1,4 +1,21 @@
-$.when($.ready).then(function(){ 
+$(document).ready(function(){
+    $('#contato_submit').on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: "/submit",
+            method: "POST",
+            data: new FormData(this),
+            contentType: false,
+            cache: false,
+            processData: false,
+            dataType: 'json',
+            success: function (data) {
+                $("#enviado").html(data.enviado);
+                $("#enviado").attr("class", "alert alert-success");
+                
+            }
+        });
+    });
     $('#characterLeft').text('140 caracteres restantes');
     $('#message').keydown(function () {
         var max = 140;
@@ -16,3 +33,5 @@ $.when($.ready).then(function(){
         }
     });    
 });
+
+//action="{{action('HomeController@submit')}}"

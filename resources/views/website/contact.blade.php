@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-md-5">
             <div class="form-area">
-                <form action="{{action('HomeController@submit')}}" method="post">
+                <form id="contato_submit" method="post">
                     @csrf
                     <br style="clear:both">
                     <h3 style="margin-bottom: 25px; text-align: center;">Entre em contato</h3>
@@ -35,11 +35,7 @@
                 </form>
             </div>
         </div>
-        @if(session('success'))
-        <div class="alert alert-success mt-4">
-            {{session('success')}}
-        </div>
-        @endif
+        <div id="enviado"></div>
     </div>
 </div>
 </div>

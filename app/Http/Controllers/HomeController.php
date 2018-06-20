@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contact;
 use Illuminate\Support\Facades\Auth;
+use App\Notifications\RepliedtoThread;
 class HomeController extends Controller
 {
     /**
@@ -32,7 +33,8 @@ class HomeController extends Controller
     {
         $sent = $request->all();
         Contact::create($sent);
-        return redirect()->action('HomeController@contact')->with('success','Enviado com sucesso');
+        auth()->user()->notify(new RepliedtoThread());
+        return response()->json(['enviado' => 'enviado']);
     }
     public function picture(Request $request)
     {
