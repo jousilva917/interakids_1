@@ -6,22 +6,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {!! Minify::stylesheet(['/css/site/app.css', '/css/site/temp.css', '/css/site/login.css'])->withFullUrl() !!}
-
 {!! Minify::javascript(['/js/site/app.js',])->withFullUrl() !!}
 @endsection
 @section('conteudo')
 <div class="container" id="login">
     <form method="POST" action="{{ route('login') }}">
         @csrf
-
         <div class="form-log-in-with-email">
-
             <div class="form-white-background">
-
                 <div class="form-title-row">
                     <h1>Entrar</h1>
                 </div>
-
                 <div class="form-row">
                     <label>
                         <span>{{ __('Endereço de Email') }}</span> </label>
@@ -51,31 +46,21 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="form-row">
                     <button type="submit">{{ __('Login') }}</button>
                 </div>
-
             </div>
-
             <a href="{{ route('password.request') }}" class="form-forgotten-password">{{ __('Esqueceu a senha?') }}&middot;</a>
             <a href="#" class="form-create-an-account">Criar nova conta &rarr;</a>
-
         </div>
-
         <div class="form-sign-in-with-social">
-
             <div class="form-row form-title-row">
                 <span class="form-title">Entre com</span>
             </div>
-
             <a href="#" class="form-google-button">Google</a>
             <a href="#" class="form-facebook-button">Facebook</a>
             <a href="#" class="form-twitter-button">Twitter</a>
-
         </div>
-
     </form>
-
 </div>
 @endsection
