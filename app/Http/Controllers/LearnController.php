@@ -22,7 +22,7 @@ class LearnController extends Controller
     }
     public function isle()
     {
-        $task = Task::all();
+        $task = Task::post();
         return view('tasks.isle')->with('task',$task);
     }
     public function taskLearn(TaskRequest $request)
