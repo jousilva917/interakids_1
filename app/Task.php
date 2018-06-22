@@ -12,4 +12,10 @@ class Task extends Model
     {
         $this->belongsTo('App\TaskLog');
     }
+    public static function post()
+    {
+        $task = self::where('stars_required', '>', 0)->get();
+
+        return $task;
+    }
 }
