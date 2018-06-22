@@ -3,10 +3,8 @@
 <head>
   @yield('head')
 </head>
-<body class="fixed-nav bg-dark" id="page-top">
+<body class="fixed-nav bg-dark" >
   @include('partials.perfilNav')
-  <div class="content-wrapper">
-    <div class="container-fluid">
       @yield('perfil')
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
