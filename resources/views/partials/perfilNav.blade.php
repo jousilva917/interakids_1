@@ -6,7 +6,7 @@
           <div class="nav-link">
             <div class="user-wrapper">
               <div class="profile-image">
-                <img src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="profile image">
+                <img id="image_preview" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="profile image">
               </div>
             </div>
             <div class="text-wrapper">
