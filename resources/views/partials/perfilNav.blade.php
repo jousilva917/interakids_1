@@ -6,7 +6,7 @@
           <div class="nav-link">
             <div class="user-wrapper">
               <div class="profile-image">
-                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="profile image">
+                <img src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="profile image">
               </div>
             </div>
             <div class="text-wrapper">
@@ -44,9 +44,9 @@
             <span class="menu-title">algo</span>
           </a>
         </li>
-  
         </li>
       </ul>
+      
     </nav>
      <!--Navbar-top-->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -94,3 +94,30 @@
         </button>
       </div>
     </nav>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#profile_pic">
+          Mudar foto
+      </button>
+      <div class="modal fade" id="profile_pic" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Escolher foto</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <h3>Image preview</h3>
+                      <img src="" alt="" id="test" name="test" height="100px" width="100px">
+                      <form id="submit_form" method="post">
+                          @csrf
+                          <input type="file" name="image_file" id="image_file" />
+                          <input type="submit" name="upload_button" class="btn btn-primary" value="Upload" />
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
