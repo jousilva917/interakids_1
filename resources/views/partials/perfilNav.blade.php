@@ -58,7 +58,7 @@
           <li class="nav-item dropdown d-none d-xl-inline-block ">
             <a class="nav-link " id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <span class="profile-text">Bom Dia, {{Auth()->user()->name}}!</span>
-              <img class="img-xs  img-fluid rounded-circle" src="https://www.w3schools.com/howto/img_avatar.png" alt="Profile image"><i class="fa fa-angle-down fa-2x"></i></img>
+              <img class="img-xs  img-fluid rounded-circle" src="/storage/profile_image/{{Auth()->user()->profile_image}}" alt="Profile image"><i class="fa fa-angle-down fa-2x"></i></img>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown"  aria-labelledby="UserDropdown">
               <a class="dropdown-item p-0 " >
@@ -83,8 +83,9 @@
               <a class="dropdown-item">
                 ola
               </a>
-              <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-          <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">
+              <i class="fa fa-fw fa-sign-out"></i>Logout
+              </a>
             </div>
           </li>
         </ul>
