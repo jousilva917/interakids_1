@@ -17,34 +17,29 @@
             <a class="btn btn-success nav-link" href="#">Conquistas</a>
           </div>
         </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-television"></i>
+    </ul>
+    <ul class="nav nav-pills">
+        <li class="nav-item ">
+          <a class="nav-link active" data-toggle="tab" href="#jogar">
             <span class="menu-title">Jogar</span>
           </a>
         </li>
   
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-content-copy"></i>
-            <span class="menu-title">algo</span>
-            <i class="menu-title"></i>
+          <a class="nav-link" data-toggle="tab" href="#algo1">
+            <span class="menu-title">algo1</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-backup-restore"></i>
-            <span class="menu-title">algo</span>
+          <a class="nav-link" data-toggle="tab" href="#algo2">
+            <span class="menu-title">algo2</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="menu-icon mdi mdi-chart-line"></i>
-            <span class="menu-title">algo</span>
+          <a class="nav-link" data-toggle="tab" href="#algo3">
+            <span class="menu-title">algo3</span>
           </a>
         </li>
         </li>
       </ul>
-      
     </nav>
