@@ -17,7 +17,6 @@ class LearnController extends Controller
     }
     public function perfil()
     {
-        
         return view('learn.perfil');
     }
     public function isle()

@@ -8,7 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Carbon\Carbon;
 
-class RepliedtoThread extends Notification
+class RepliedToThread extends Notification
 {
     use Queueable;
 
@@ -19,7 +19,7 @@ class RepliedtoThread extends Notification
      */
     public function __construct()
     {
-        //
+
     }
 
     /**
@@ -40,9 +40,9 @@ class RepliedtoThread extends Notification
      * @return array
      */
     public function toDatabase($notifiable)
-    {
+    {   
         return [
-            'repliedTime'=>Carbon::now()
+            'name'=> auth()->user()->name
         ];
     }
     /**
