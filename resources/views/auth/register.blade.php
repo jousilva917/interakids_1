@@ -86,7 +86,7 @@
                 <span class="form-title">Entre com</span>
             </div>
 
-            <a href="#" class="form-google-button">Google</a>
+            <a href="{{url('auth/google')}}" class="form-google-button">Google</a>
             <a href="#" class="form-facebook-button">Facebook</a>
             <a href="#" class="form-twitter-button">Twitter</a>
 

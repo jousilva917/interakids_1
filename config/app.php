@@ -160,7 +160,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        Laravel\Socialite\SocialiteServiceProvider::class, 
     ],
 
     /*
@@ -209,8 +209,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Minify' => Devfactory\Minify\Facades\MinifyFacade::class
-
+        'Minify' => Devfactory\Minify\Facades\MinifyFacade::class,
+        'Socialite' => Laravel\Socialite\Fachadas\Socialite::class,
 
     ],
 

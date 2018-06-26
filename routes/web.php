@@ -22,3 +22,6 @@ Route::get('/task/{id}','LearnController@task');
 //Sistema de cadastro
 Auth::routes();
 Route::get('/perfil', 'LearnController@perfil')->name('perfil');
+//Sistema de login com google,facebook...
+Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
