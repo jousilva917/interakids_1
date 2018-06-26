@@ -3,6 +3,7 @@
     $("input[type='submit']").addClass("btn waves-effect waves-light")
   });
   // Parallax
+
   (function() {
     window.addEventListener('scroll', function(event) {
       var depth, i, layer, layers, len, movement, topDistance, translate3d;

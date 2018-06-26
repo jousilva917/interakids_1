@@ -8,7 +8,50 @@
 {!! Minify::javascript(['/js/site/app.js','/js/site/intro.js', '/js/site/contact.js'])->withFullUrl() !!} 
 @endsection 
 @section('content')
-<div class="container">
+
+
+
+<div class="top-content form-top">
+        	
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                        	<div class="">
+                        		<div class="form-top-left">
+                        			<h3><center>Entre em contato</center></h3>
+                            		<center><p>Deixe suas mensagens ou sugestões:</p></center>
+                        		</div>
+                        		<div class="form-top-right">
+                        			<i class="fa fa-envelope"></i>
+                        		</div>
+                            </div>
+                            <div class="form-bottom contact-form">
+			                    <form role="form" action="assets/contact.php" method="post">
+			                    	<div class="form-group">
+			                    		<label class="sr-only" for="contact-email">Email:</label>
+			                        	<input type="text" name="email" placeholder="Email" class="contact-email form-control" id="contact-email">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="contact-subject">Assunto:</label>
+			                        	<input type="text" name="subject" placeholder="Assunto" class="contact-subject form-control" id="contact-subject">
+			                        </div>
+			                        <div class="form-group">
+			                        	<label class="sr-only" for="contact-message">Mensagem:</label>
+			                        	<textarea name="message" placeholder="Mensagem" class="contact-message form-control" id="contact-message"></textarea>
+			                        </div>
+                                    <button type="submit" class="btn">Enviar</button>
+                                    
+			                    </form>
+		                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+<!--<div class="container">
     <div class="row">
         <div class="col-md-5">
             <div class="form-area">
@@ -38,5 +81,5 @@
         <div id="enviado"></div>
     </div>
 </div>
-</div>
+</div>-->
 @endsection

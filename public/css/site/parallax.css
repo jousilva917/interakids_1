@@ -1,42 +1,40 @@
-/*
+
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+
 #hero {
-  height: 800px;
-  overflow: hidden;
+  height: 500px;
+  overflow: auto;
   position: relative;
 }
 
-
 #content {
-  background-color: #130d0a;
-  
-}
-#grid {
-  background-color: #4CAF50;
-}
-#about {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .layer {
   background-position: bottom center;
-  background-size: auto;
+  background-size: fixed;
   background-repeat: no-repeat;
   width: 100%;
-  height: 800px;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   z-index: -1;
 }
 
 #hero-mobile {
-  display: block;
+  display: none;
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom/cover;
-  height: 300px;
+  height: 320px;
 }
 
 .first-section {
-  padding: 50px 0 20px 0;
-}
-.second-section {
   padding: 50px 0 20px 0;
 }
 
@@ -56,54 +54,59 @@ p {
   line-height: 150%;
 }
 
-#hero,
-.layer {
+#hero, .layer {
   min-height: 800px;
 }
 
 .layer-bg {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg");
-  background-position:bottom;
+  background-image: url("../../images/fundo_prontoR (1).png");
+  margin-top: 0px;
 }
 
 .layer-1 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png\a 		");
+  background-image: url("../../images/elementosfundoprontogrande.png");
   background-position: left bottom;
+  margin-top: 10px;
+
 }
 
 .layer-2 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png");
+  background-image: url("../../images/outrasilhasprontogrande.png");
+   margin-top: -20px;
+   
 }
 
 .layer-3 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png\a 		");
-  background-position: right bottom;
+  background-image: url("../../images/ilha1prontagrande.png");
+  margin-top: -10px;
+   width: 100%;
+   height: 100%;
+ 
 }
 
 .layer-4 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png\a 		");
+  background-image: url("../../images/nuvens.png");
+  margin-top: 10px;
 }
 
-.layer-overlay {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png\a 		");
-}
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1200px) {
   #hero {
-    display: none;
+    display: block;
   }
+
   #hero-mobile {
     display: block;
   }
 }
-
 .tutorial-link {
   color: #fff;
   font-size: 18px;
   text-decoration: underline;
 }
-
 .tutorial-link:hover {
   color: #ede0d5;
 }
-*/
+
+
