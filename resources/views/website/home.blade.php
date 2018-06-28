@@ -37,11 +37,23 @@
           <a class='tutorial-link' href='https://medium.com/@PatrykZabielski/how-to-make-multi-layered-parallax-illustration-with-css-javascript-2b56883c3f27'>
             Learn how to create this parallax effect
           </a>
+         <section class="border-btn">
+    <div class="container">
+       <div class="row text-center">
+    
+            <div class="btn-heading"></div>
+            <a class="btn4" href="#">Jogar</a>
+           </div>
+        </div>
+         </section>
         </div>
       </div>
     </section>
   </div>
 </div>
+
+
+
 
 
     <section id="section-layer" class="meio">
@@ -81,24 +93,20 @@
                 <h2 class="display-3">Grid InteraKids</h2>
             </div>
             <div class="row">
-                <div class="col-sm-3 col-md-3 item">
+                
+                <div class="col-sm-4 col-md-4 item">
                     <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
+                        <img class="img-fluid image scale-on-hover ilha1">
                     </a>
                 </div>
-                <div class="col-sm-3 col-md-3 item">
+                <div class="col-sm-4 col-md-4 item">
                     <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
+                        <img class="img-fluid image scale-on-hover ilha2">
                     </a>
                 </div>
-                <div class="col-sm-3 col-md-3 item">
+                <div class="col-sm-4 col-md-4 item">
                     <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
-                    </a>
-                </div>
-                <div class="col-sm-3 col-md-3 item">
-                    <a class="lightbox" href="#">
-                        <img class="img-fluid image scale-on-hover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2e_HLzSvESoaytGygSCyr90lU6FS0jE1JHrWD5CoeTsNI1iZD">
+                        <img class="img-fluid image scale-on-hover ilha3">
                     </a>
                 </div>
             </div>

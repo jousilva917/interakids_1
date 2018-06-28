@@ -1,6 +1,6 @@
 /*PAGE-PRINCIPAL*/
 #page-principal{
-  background:  #428bca;
+  background:  #fff;
   color: #333;
   height: 100%;
   width: 100%;
@@ -28,8 +28,8 @@
   background: #ffffff;
   min-height: 500px; }
 
-  .meio{
-    background-color: #77a10c;
+  .httio{
+    background-color: ;
   }
 
 #row-col {
@@ -186,6 +186,8 @@
       text-align: center;
   }
 }
+
+
 /*END-FOOTER*/
 
 /*Style contato*/
@@ -330,8 +332,7 @@ padding-top: 40px;
 .form-top {
 overflow: hidden;
 padding: 0 25px 15px 25px;
-background: #444;
-background:url('https://pre00.deviantart.net/9393/th/pre/f/2015/341/d/6/flat_landscape__winter_edition__by_jovicasmileski-d9jbz70.jpg');
+background: #fff;
 -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
 text-align: left;
 }
@@ -443,5 +444,52 @@ button.btn:active { outline: 0; opacity: 0.6; color: #fff; -moz-box-shadow: none
 button.btn:focus { outline: 0; opacity: 0.6; background: #fff; color: #fff; }
 
 button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; background: #19b9e7; color: #fff; }
+
+
+
+
+.border-btn .btn4{
+   
+   border-radius:50px;
+   background: #00b09b; 
+   background: -webkit-linear-gradient(to right, #00b09b, #96c93d); 
+   background: linear-gradient(to right, #00b09b, #96c93d); 
+   text-transform: capitalize;
+   color: #FFF;
+   border:none;
+   font-size: 18px;
+   padding:25px 60px;
+  
+}
+
+.meio{
+   background: #00b09b; 
+   background: -webkit-linear-gradient(to right, #00b09b, #96c93d); 
+   background: linear-gradient(to right, #00b09b, #96c93d); 
+   text-transform: capitalize;
+   color: #FFF;
+  
+}
+
+.ilha1{
+  background-image: url('../../images/ilha1p.png');
+  width: 259px;
+  height: 194px;
+ 
+}
+
+
+.ilha2{
+   background-image: url('../../images/ilha2p.png');
+  width: 259px;
+  height: 194px;
+}
+
+
+.ilha3{
+   background-image: url('../../images/ilha3p.png');
+  width: 259px;
+  height: 194px;
+}
 
 
