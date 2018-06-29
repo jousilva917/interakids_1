@@ -29,12 +29,6 @@ body {
   z-index: -1;
 }
 
-#hero-mobile {
-  display: none;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom/cover;
-  height: 320px;
-}
-
 .first-section {
   padding: 30px 0 20px 0;
 }
@@ -50,7 +44,7 @@ h1 {
 }
 
 p {
-  color: #ede0d5;
+  color: black;
   font-size: 18px;
   line-height: 150%;
 }

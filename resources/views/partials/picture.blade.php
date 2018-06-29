@@ -17,4 +17,8 @@
             });
         });
     }); 
+    function markNotificationAsRead(){
+        $.get('/markAsRead');
+        //$(this).parent().hide();
+    }
 </script>

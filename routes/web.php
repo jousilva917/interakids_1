@@ -19,6 +19,9 @@ Route::get('/explore', 'HomeController@explore');
 Route::get('/isle', 'LearnController@isle');
 Route::get('/task/Learn', 'LearnController@taskLearn');
 Route::get('/task/{id}','LearnController@task');
+Route::get('/markAsRead', function(){
+        auth()->user()->unreadnotifications->markAsRead();
+});
 //Sistema de cadastro
 Auth::routes();
 Route::get('/perfil', 'LearnController@perfil')->name('perfil');

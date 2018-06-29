@@ -39,11 +39,9 @@
             <div class="tab-pane fade in active" id="jogar" style="  background-color: #ffffff; width: 1025px; height: 825px;">Default 1</div>
             <div class="tab-pane fade" id="algo1" style="  background-color: aqua; width: 1025px; height: 825px;">Default 2</div>
             <div class="tab-pane fade" id="algo2" style="  background-color: darkcyan; width: 1025px; height: 825px;">Default 3</div>
-            <div class="tab-pane fade" id="algo3"style="  background-color: clay; width: 1025px; height: 825px;" >Default 4</div>
+            <div class="tab-pane fade" id="algo3" style="  background-color: clay; width: 1025px; height: 825px;" >Default 4</div>
         </div>
     </div>
 </div>
-
 </body>
-
 </html>

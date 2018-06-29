@@ -34,7 +34,7 @@ class HomeController extends Controller
         $sent = $request->all();
         Contact::create($sent);
         auth()->user()->notify(new RepliedtoThread());
-        return response()->json(['enviado' => 'enviado']);
+        return redirect('/contato');
     }
     public function picture(Request $request)
     {

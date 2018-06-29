@@ -19,7 +19,7 @@
               </a>
               @foreach(Auth()->user()->unreadnotifications as $notification)
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item" href="#">
+              <a class="dropdown-item preview-item" href="#" onclick="markNotificationAsRead()">
                   <div class="preview-thumbnail">
                     <div class="preview-icon bg-success">
                       <i class="mdi mdi-alert-circle-outline mx-0"></i>
@@ -33,11 +33,12 @@
                   </div>
                 </a>
               @endforeach
-          </li>
+            </div>
+        </li>
           <li class="nav-item dropdown d-none d-xl-inline-block ">
             <a class="nav-link " id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <span class="profile-text">Bom Dia, {{Auth()->user()->name}}!</span>
-              <img class="img-xs  img-fluid rounded-circle" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="Profile image"><i class="fa fa-angle-down fa-2x"></i></img>
+              <img class="img-xs  img-fluid rounded-circle" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="Profile image"><i class="fa fa-angle-down fa-2x"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown"  aria-labelledby="UserDropdown">
               <a class="dropdown-item p-0 " >
