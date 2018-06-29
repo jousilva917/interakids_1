@@ -1,7 +1,7 @@
 <!-- Navegação -->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/home') }}">
+        <a class="navbar-brand navbar" href="{{ url('/home') }}">
             {{ config('app.name', 'InteraKids') }}
         </a>
         <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">

@@ -71,9 +71,9 @@
             </div>
         </div>
     </section>
-    <div class="container-fluid" id="row-video">
-        <div class="row text-center justify-content" id="row-col">
-            <div class="col-sm-6 col-md-6">
+    <div class="container-fluid cor" id="row-video">
+        <div class="row text-center justify-content cor" id="row-col">
+            <div class="col-sm-6 col-md-6 ">
                 <h2 class="display-4">If you programing</h2>
                 <p class="lead">Lorem ipsum in phasellus urna hac diam ligula purus sapien, ac ultricies eu netus convallis lacinia etiam
                     hac tellus, tempus eros luctus placerat vulputate diam malesuada nullam. imperdiet porta scelerisque

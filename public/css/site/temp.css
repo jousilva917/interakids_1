@@ -5,6 +5,11 @@
   height: 100%;
   width: 100%;
 }
+
+.cor{
+  background-color:  #5cb8fa;
+}
+
 .navbar {
   border-bottom: #008ed6 3px solid;
   opacity: 0.8; 
