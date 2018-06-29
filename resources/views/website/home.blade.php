@@ -16,7 +16,6 @@
         <div class='layer-overlay layer' data-depth='0.85' data-type='parallax'></div>
         <div class='layer-4 layer' data-depth='1.00' data-type='parallax'></div>
     </div>
-    <div id='hero-mobile'></div>
     <div id='content'>
         <div class='container'>
             <section class='first-section'>
