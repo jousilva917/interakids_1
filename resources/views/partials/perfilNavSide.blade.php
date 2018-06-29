@@ -40,6 +40,5 @@
             <span class="menu-title">algo3</span>
           </a>
         </li>
-        </li>
       </ul>
     </nav>

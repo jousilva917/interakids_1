@@ -9,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 {!! Minify::stylesheet(['/css/site/app.css', '/css/site/team.css', '/css/site/temp.css'])->withFullUrl() !!} 
-{!! Minify::javascript(['/js/site/app.js','/js/site/intro.js', '/js/site/contact.js'])->withFullUrl() !!} 
+{!! Minify::javascript(['/js/site/app.js','/js/site/intro.js'])->withFullUrl() !!} 
 @endsection 
 @section('content')
 

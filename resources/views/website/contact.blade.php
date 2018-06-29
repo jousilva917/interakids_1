@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
 {!! Minify::stylesheet(['/css/site/app.css', '/css/site/temp.css'])->withFullUrl() !!} 
-{!! Minify::javascript(['/js/site/app.js','/js/site/intro.js', '/js/site/contact.js'])->withFullUrl() !!} 
+{!! Minify::javascript(['/js/site/app.js','/js/site/intro.js'])->withFullUrl() !!} 
 @endsection 
 @section('content')
 
@@ -27,7 +27,8 @@
                         		</div>
                             </div>
                             <div class="form-bottom contact-form">
-			                    <form role="form" action="assets/contact.php" method="post">
+                                <form role="form" action="{{action('HomeController@submit')}}" method="post">
+                                    @csrf
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="contact-email">Email:</label>
 			                        	<input type="text" name="email" placeholder="Email" class="contact-email form-control" id="contact-email">
