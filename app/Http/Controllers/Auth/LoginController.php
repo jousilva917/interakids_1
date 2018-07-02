@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Socialite;
+use App\User;
+use Illuminate\Contracts\Auth\Authenticatable;
 class LoginController extends Controller
 {
     /*
@@ -49,7 +51,17 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('google')->stateless()->user();
-        
-        return $user->getName();
+
+        $check_user = User::where('email', $user->getEmail())->first();
+        if($check_user){
+            auth()->login($check_user);
+            return redirect('/perfil');
+        }
+        $user_db = new User();
+        $user_db->name = $user->getName();
+        $user_db->email = $user->getEmail();
+        $user_db->password = bcrypt('temp'.rand(1, 100000).env('APP_KEY').'temp');
+        $user_db->save();
+        return redirect('/perfil');
     }
 }
