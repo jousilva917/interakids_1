@@ -50,9 +50,9 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $user = Socialite::driver('google')->stateless()->user();
-
         $check_user = User::where('email', $user->getEmail())->first();
-        if($check_user){
+        if($check_user)
+        {
             auth()->login($check_user);
             return redirect('/perfil');
         }
