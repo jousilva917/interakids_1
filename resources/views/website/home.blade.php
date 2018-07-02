@@ -65,22 +65,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-    </section>
-    <div class="container-fluid cor" id="row-video">
-        <div class="row text-center justify-content cor" id="row-col">
-            <div class="col-sm-6 col-md-6 ">
-                <h2 class="display-4">If you programing</h2>
-                <p class="lead">Lorem ipsum in phasellus urna hac diam ligula purus sapien, ac ultricies eu netus convallis lacinia etiam
-                    hac tellus, tempus eros luctus placerat vulputate diam malesuada nullam. imperdiet porta scelerisque
-                    himenaeos vestibulum </p>
-                <a href="#" class="btn btn-outline-light">Lets play</a>
-            </div>
-            <div class="col-sm-6 col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-=======
     </div>
 </section>
 <div class="container-fluid" id="row-video">
@@ -93,7 +77,6 @@
         <div class="col-sm-6 col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
->>>>>>> a4ca0795971c531b9ad8a41a5a111520dc2279ed
             </div>
         </div>
     </div>
