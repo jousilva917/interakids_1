@@ -13752,10 +13752,7 @@ body {
   margin: 0;
   overflow-x: hidden; }
 
-.form-control,
-.form-control:focus {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none; }
+
 
 .form-control {
   box-shadow: none; }
