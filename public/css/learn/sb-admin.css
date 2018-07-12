@@ -7738,6 +7738,10 @@ h6, .h6 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2; }
+  .display-5 {
+    font-size: 3.0rem;
+    font-weight: 300;
+    line-height: 1.2; }
 
 hr {
   margin-top: 1rem;
@@ -9022,7 +9026,12 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   font-size: 1rem;
   line-height: 1;
   border-radius: 0.1875rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -moz-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -ms-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
   @media screen and (prefers-reduced-motion: reduce) {
     .btn {
       transition: none; } }
@@ -10120,13 +10129,14 @@ input[type="button"].btn-block {
     color: #6c757d; }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6; }
+  background-color: transparent;
+}
   .nav-tabs .nav-item {
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+}
   .nav-tabs .nav-link {
-    border: 1px solid transparent;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem; }
+    background-color: white;
+  }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
       border-color: #e9ecef #e9ecef #dee2e6; }
     .nav-tabs .nav-link.disabled {
@@ -10136,7 +10146,7 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #495057;
-    background-color: #fff;
+    
     border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
@@ -13923,11 +13933,8 @@ input:focus {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 63px);
-  background: #ffffff;
   font-family: "Poppins", sans-serif;
   padding: 0;
-  width: 255px;
-  z-index: 11;
   transition: width 0.25s ease, background 0.25s ease;
   -webkit-transition: width 0.25s ease, background 0.25s ease;
   -moz-transition: width 0.25s ease, background 0.25s ease;
@@ -13946,8 +13953,7 @@ input:focus {
       display: flex;
       padding: 16px 35px;
       white-space: nowrap;
-      height: 52px;
-      color: #4a4a4a; }
+       }
       .sidebar .nav .nav-item .nav-link i.menu-arrow {
         margin-left: auto;
         margin-right: 0;
@@ -14018,14 +14024,17 @@ input:focus {
           height: 40px;
            }
           .sidebar .nav .nav-item.nav-profile .nav-link .user-wrapper .profile-image img {
-            border-radius: 100%;
-            max-width: 100%; }
+            border-radius:100%;
+            max-width: 100%;
+            -webkit-border-radius:100%;
+            -moz-border-radius:100%;
+            -ms-border-radius:100%;
+            -o-border-radius:100%;
+}
       
           .sidebar .nav .nav-item.nav-profile .nav-link .user-wrapper .text-wrapper .designation {
             margin-right: 30px; }
-    .sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile) > .nav-link {
-      background: #fafbfc;
-      color: #4a4a4a; }
+
     .sidebar .nav.sub-menu {
       margin-bottom: 0;
       padding: 0 0 0 4rem; }
@@ -14178,7 +14187,7 @@ input:focus {
         margin-right: 1rem; }
         .navbar.default-layout .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
           color: inherit;
-          font-size: 12px;
+          font-size: 20px;
           vertical-align: middle; }
           @media (max-width: 767px) {
             .navbar.default-layout .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
@@ -14193,7 +14202,7 @@ input:focus {
               margin-right: 0;
               margin-left: 15px; }
           .navbar.default-layout .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.nav-btn .btn {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 0, 0, 0.1);
             padding: 0.75rem 1rem;
             color: #ffffff; }
           .navbar.default-layout .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.nav-btn:after {

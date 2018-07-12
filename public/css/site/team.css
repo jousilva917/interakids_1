@@ -55,7 +55,7 @@
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   
-  @media (min-width: 78px) {
+  @media (min-width: 780px) {
     section {
       padding: 65px 0;
     }
