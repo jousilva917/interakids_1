@@ -1,6 +1,5 @@
 <div class="side-nav fixed">
-  <div class="logo">
-    <i class="fa fa-tachometer"></i>
+  <div class="logo text-center">
     <span>{{config('app.name' , 'InteraKids')}}</span>
   </div>
   <nav class="sidebar side-nav fixed">
@@ -30,16 +29,16 @@
 
       <li class="nav-item  p-3 mb-3">
         <a class=" nav-link shadow" data-toggle="tab" href="#algo1">
-        algo1
+          Progresso
         </a>
       </li>
       <li class="nav-item  p-3 mb-3">
         <a class=" nav-link shadow " data-toggle="tab" href="#algo2">
-          algo2
+        Personagens
         </a>
       </li>
       <li class="nav-item  p-3 mb-3">
-        <a class=" nav-link shadow" data-toggle="tab" href="#algo3">algo3</a>
+        <a class=" nav-link shadow" data-toggle="tab" href="#algo3">estatísticas</a>
       </li>
     </ul>
   </nav>
