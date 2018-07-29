@@ -1,3 +1,4 @@
+<script>
 /**
  * Blockly Games: Maze
  *
@@ -1535,3 +1536,4 @@ Maze.notDone = function() {
 };
 
 window.addEventListener('load', Maze.init);
+</script>
