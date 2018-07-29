@@ -54,25 +54,25 @@ p {
 }
 
 .layer-bg {
-  background-image: url("../../images/fundo_prontoR (1).png");
+  background-image: url("/images/fundo_prontoR (1).png");
   margin-top: 0px;
 }
 
 .layer-1 {
-  background-image: url("../../images/elementosfundoprontogrande.png");
+  background-image: url("/images/elementosfundoprontogrande.png");
   background-position: left bottom;
   margin-top: 10px;
 
 }
 
 .layer-2 {
-  background-image: url("../../images/outrasilhasprontogrande.png");
+  background-image: url("/images/outrasilhasprontogrande.png");
    margin-top: -20px;
    
 }
 
 .layer-3 {
-  background-image: url("../../images/ilha1prontagrande.png");
+  background-image: url("/images/ilha1prontagrande.png");
   margin-top: -10px;
    width: 100%;
    height: 100%;
@@ -80,7 +80,7 @@ p {
 }
 
 .layer-4 {
-  background-image: url("../../images/nuvens.png");
+  background-image: url("/images/nuvens.png");
   margin-top: 10px;
 }
 
@@ -103,5 +103,3 @@ p {
 .tutorial-link:hover {
   color: #ede0d5;
 }
-
-

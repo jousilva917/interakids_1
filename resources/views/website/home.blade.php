@@ -2,8 +2,11 @@
 <title>{{config('app.name' , 'InteraKids')}}</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> {!! Minify::stylesheet([ '/css/site/app.css', '/css/site/parallax.css', '/css/site/intro.css', '/css/site/temp.css'])->withFullUrl()!!}
-{!! Minify::javascript(['/js/site/app.js', '/js/site/parallax.js', '/js/site/intro.js'])->withFullUrl() !!} @endsection @section('content')
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+{!! Minify::stylesheet([ '/css/site/app.css', '/css/site/parallax.css','/css/site/temp.css','/css/site/intro.css'])->withFullUrl()!!}
+{!! Minify::javascript(['/js/site/app.js', '/js/site/parallax.js', '/js/site/intro.js'])->withFullUrl() !!} 
+@endsection 
+ @section('content')
 <div id="loader" class="loader"></div>
 <div class="" style="display:none;" id="page-secundaria">
     <!--HEADER-->
@@ -24,6 +27,7 @@
                         <h1 class="display-3 text-center font-weight-bold">InteraKids</h1>
                     </div>
                 </div>
+            </section>
                 <div class='row'>
                     <div class='col-sm-6'>
                         <p class="text-justify">O projeto INTERAKIDS tem como objetivo ensinar de forma interativa a programação e a lógica para
@@ -52,7 +56,6 @@
                         </div>
                     </div>
                 </div>
-        </section>
     </div>
 <section id="section-layer" class="meio">
     <div class="container-fluid">
@@ -72,11 +75,10 @@
         <div class="col-sm-6 col-md-6">
             <h2 class="display-4">Mas e se?</h2>
             <p class="lead">Para qualquer duvida que possa surgir, fizemos esse pequeno vídeo que explica um pouco sobre a nossa didática e faz um pequeno tour pelo nosso site, mostrando desde as diferenças de ter e não ter uma conta até algumas fases do site; sinta-se livre para explorar todo o site! As ilhas precisam de vocês. </p>
-            <a href="#" class="btn btn-outline-light">Lets play</a>
         </div>
         <div class="col-sm-6 col-md-6">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_Mbxe33BYW8" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -90,17 +92,17 @@
 
             <div class="col-sm-4 col-md-4 item">
                 <a class="lightbox" href="#">
-                    <img class="img-fluid image scale-on-hover ilha1">
+                    <div class="img-fluid image scale-on-hover ilha1"></div>
                 </a>
             </div>
             <div class="col-sm-4 col-md-4 item">
                 <a class="lightbox" href="#">
-                    <img class="img-fluid image scale-on-hover ilha2">
+                    <div class="img-fluid image scale-on-hover ilha2"></div>
                 </a>
             </div>
             <div class="col-sm-4 col-md-4 item">
                 <a class="lightbox" href="#">
-                    <img class="img-fluid image scale-on-hover ilha3">
+                    <div class="img-fluid image scale-on-hover ilha3"></div>
                 </a>
             </div>
         </div>
@@ -108,8 +110,7 @@
 </section>
 <!--About-us-->
 <div class="services-container section-container">
-    <div class="container-fluid">
-    </div>
+    <div class="container-fluid"></div>
 </div>
 </div>
 @endsection

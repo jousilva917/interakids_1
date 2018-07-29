@@ -16,7 +16,7 @@
 
 }
 #home-section {
-  background: url('../../images/home_pronto.png') no-repeat;
+  background: url('/images/home_pronto.png') no-repeat;
   min-height: 800px;
   background-size: cover;
   background-attachment: fixed;
@@ -33,9 +33,9 @@
   background: #ffffffe7;
   min-height: 350px; }
 
-  .httio{
+  /*.httio{
     background-color:;
-  }
+  }*/
 
 #row-col {
   margin: 0px;
@@ -472,29 +472,20 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
    background: -webkit-linear-gradient(to right, #00b09b, #96c93d); 
    background: linear-gradient(to right, #00b09b, #96c93d); 
    text-transform: capitalize;
-   color: #FFF;
-  
+   color: #FFF;  
 }
-
 .ilha1{
-  background-image: url('../../images/ilha1p.png');
+  background-image: url('/images/ilha1p.png');
   width: 259px;
   height: 194px;
- 
 }
-
-
 .ilha2{
-   background-image: url('../../images/ilha2p.png');
+  background-image: url('/images/ilha2p.png');
   width: 259px;
   height: 194px;
 }
-
-
 .ilha3{
-   background-image: url('../../images/ilha3p.png');
+ background-image: url('/images/ilha3p.png');
   width: 259px;
   height: 194px;
 }
-
-

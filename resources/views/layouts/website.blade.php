@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
     @yield('head')
     </head>
@@ -7,7 +7,6 @@
         @include('partials.nav')
      
         @yield('content')
-        
         @include('partials.footer')
     </body>
 </html>
