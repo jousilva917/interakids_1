@@ -467,7 +467,6 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
 }
 
 .meio{
-<<<<<<< HEAD
   background:
     /* top, transparent red 
     linear-gradient(
@@ -476,13 +475,6 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
     ),
     /* bottom, image */
     url('../../images/rochas2.png')no-repeat;
-=======
-   background: #00b09b; 
-   background: -webkit-linear-gradient(to right, #00b09b, #96c93d); 
-   background: linear-gradient(to right, #00b09b, #96c93d); 
-   text-transform: capitalize;
-   color: #FFF;  
->>>>>>> eb6f73d8db58a13e579cde7fcb0edc6d11c60bdb
 }
 .ilha1{
   background-image: url('/images/ilha1p.png');
@@ -498,7 +490,6 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
  background-image: url('/images/ilha3p.png');
   width: 259px;
   height: 194px;
-<<<<<<< HEAD
 }
 
 
@@ -533,6 +524,3 @@ section {
   color:#fff;
 }
 
-=======
-}
->>>>>>> eb6f73d8db58a13e579cde7fcb0edc6d11c60bdb
