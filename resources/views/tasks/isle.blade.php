@@ -18,6 +18,7 @@
     @endif @foreach($task as $t)
     <form action="{{action('LearnController@task')}}" method="get">
         <input type="hidden" name="id" value="{{$t->id}}">
+    <input type="hidden" name="level" value="{{$t->level}}">
         <button class="{{auth()->user()->stars >= $t->stars_required ? 'btn btn-primary':'btn btn-danger'}}" type="submit">{{$t->name}}</button>
     </form>
     @endforeach

@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{config('appName', 'InteraKids')}}</title>
-    {!!Minify::stylesheet(['/css/site/app.css','/common/common.css', '/maze/style.css'])->withfullUrl()!!} 
-    {!!Minify::javascript(['/js/site/app.js'])->withfullUrl()!!}
+    {!!Minify::stylesheet(['/css/site/app.css'])->withfullUrl()!!} 
+    {!!Minify::javascript(['/js/site/app.js','/blockly/blockly_compressed.js',
+    '/blockly/javascript_compressed.js','/blockly/msg/js/pt-br.js'])->withfullUrl()!!}
+    <script>
+        @yield('scripts')
+    </script>
 </head>
 
 <body>
@@ -26,12 +30,6 @@
             <a class="level_number" id="level{{$task->level}}" href="/isle/level/{{$task->id}}/skin/pegman">{{$task->level}}</a>
             @endif
             </h1>
-            </td>
-            <td class="farSide">
-                <button id="pegmanButton">
-                    <img src="{{asset('common/1x1.gif')}}">
-                    <span id="pegmanButtonArrow"></span>
-                </button>
             </td>
         </tr>
     </table>

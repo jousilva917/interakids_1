@@ -28,6 +28,7 @@ class LearnController extends Controller
     public function task(TaskRequest $request)
     {
         $task_id = $request->id;
+        $task_level = $request->level;
         $task = new TaskLog();
         $task->user_id = auth()->user()->id;
         $task->task_id = $task_id;

@@ -24,7 +24,7 @@
     </div>
     <!-- /.tab-pane1 -->
     <!--TabPane1-->
-    <div class=" tab-pane fade" id="algo1" style="  background-color: darkcyan;">Default 2</div>
+    <div class=" tab-pane fade" id="algo1" style="  background-color: darkcyan;">Default 10</div>
     <div class=" tab-pane fade" id="algo2" style="  background-color: darkcyan;">Default 3</div>
     <div class=" tab-pane fade" id="algo3" style="  background-color: clay;">Default 4</div>
   </div>

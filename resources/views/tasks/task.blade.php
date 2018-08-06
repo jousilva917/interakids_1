@@ -9,4 +9,9 @@
     <input type="submit" value="Próximo">
 </form>
 @endif
+<div id="blockly" style="height:480px; width:600px;"></div>
+<xml id="toolbox" style="display:none;">
+<block type=""></block>
+
+</xml>
 @endsection
