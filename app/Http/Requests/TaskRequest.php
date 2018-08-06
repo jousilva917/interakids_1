@@ -12,11 +12,12 @@ class TaskRequest extends FormRequest
      * @return bool
      */
     public function authorize()
-    {
-        if(Auth()->check())
-        {
-            return true;
-      }
+    {   
+        if(auth()->check()){
+        return true;
+        }else{
+        return false;
+        }
     }
 
     /**
@@ -30,5 +31,4 @@ class TaskRequest extends FormRequest
             'id' => 'required|integer|exists:task,id'
         ];
     }
-
 }

@@ -31,5 +31,13 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\TaskLog');
     }
-    
+    public function charlog()
+    {
+        return $this->hasMany('App\Charlog');
+    }
+    public function gain_stars($stars)
+    {
+        $this->stars += $stars;
+        $this->save();
+    }
 }

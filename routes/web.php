@@ -14,11 +14,13 @@ Route::get('/sobre', 'HomeController@sobre');
 Route::get('/contato', 'HomeController@contact');
 Route::post('/submit', 'HomeController@submit');
 Route::post('/picture','HomeController@picture');
+Route::get('/task', 'HomeController@tasks');
 //LearnController
 Route::get('/explore', 'HomeController@explore');
 Route::get('/isle', 'LearnController@isle');
-Route::get('/task/Learn', 'LearnController@taskLearn');
-Route::get('/task/{id}','LearnController@task');
+Route::get('task', 'LearnController@task');
+Route::post('/task/learn', 'LearnController@taskComplete');
+Route::get('/pegs', 'LearnController@pegs');
 Route::get('/markAsRead', function(){
         auth()->user()->unreadnotifications->markAsRead();
 });

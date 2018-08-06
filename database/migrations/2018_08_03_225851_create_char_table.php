@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTaskTable extends Migration
+class CreateCharTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,10 @@ class AddTaskTable extends Migration
      */
     public function up()
     {
-        Schema::create('task',function(Blueprint $table){
+        Schema::create('char', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('description');
-            $table->integer('level');
-            $table->integer('isle');
-            $table->integer('stars_reward');
-            $table->integer('stars_required');
+            $table->string('image')->default('pegman.png');
         });
     }
 
@@ -31,6 +27,6 @@ class AddTaskTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfexists('task');
+        Schema::dropIfExists('char');
     }
 }

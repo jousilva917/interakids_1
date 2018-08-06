@@ -38,14 +38,14 @@
             <i class="fa fa-angle-down fa-2x"></i>
           </a>
           <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-            <a class="dropdown-item mt-2">
-            Configuração gerais
+            <a class="dropdown-item mt-2" data-toggle="modal" data-target="#Modal-configel">
+              Configuração gerais
             </a>
-            <a class="dropdown-item">
-            Configuração de audio
+            <a class="dropdown-item" data-toggle="modal" data-target="#Modal-configaudio">
+              Configuração de audio
             </a>
-            <a class="dropdown-item">
-            Sobre/Contato
+            <a class="dropdown-item" data-toggle="modal" data-target="#Modal-contact">
+              Sobre/Contato
             </a>
             <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">
               <i class="fa fa-fw fa-sign-out"></i>Sair

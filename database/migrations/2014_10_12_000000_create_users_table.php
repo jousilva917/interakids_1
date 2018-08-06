@@ -20,6 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->integer('stars')->default(0);
             $table->string('profile_image')->default('noimage.png');
+            $table->integer('isle')->default(1);
             $table->rememberToken();
             $table->timestamps();
         });

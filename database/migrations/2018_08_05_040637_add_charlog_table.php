@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddTasklog extends Migration
+class AddCharlogTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,13 @@ class AddTasklog extends Migration
      */
     public function up()
     {
-        Schema::create('tasklog', function(Blueprint $table){
+        Schema::create('charlog', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->integer('task_id')->unsigned();
-            $table->foreign('task_id')->references('id')->on('task')->onDelete('cascade');
-            $table->boolean('completed')->dafault(false);
-            $table->timestamps();       
+            $table->integer('char_id')->unsigned();
+            $table->foreign('char_id')->references('id')->on('char')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 
@@ -31,6 +30,6 @@ class AddTasklog extends Migration
      */
     public function down()
     {
-        Schema::dropIfexists('tasklog');
+        Schema::dropIfExists('charlog');
     }
 }

@@ -1,6 +1,37 @@
+<div class="panel-body">
+  <div class="main-content">
+    <!--TabPane1-->
+    <div class=" tab-pane fade show active" id="jogar">
+      <div class="text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1>INTERAKIDS</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>ALGUMAS COISAS</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <a class="btn btn-lg btn-primary" data-toggle="modal" data-target="#largeModal">
+              <i class="fa fa-bolt">Jogar</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.tab-pane1 -->
+    <!--TabPane1-->
+    <div class=" tab-pane fade" id="algo1" style="  background-color: darkcyan;">Default 2</div>
+    <div class=" tab-pane fade" id="algo2" style="  background-color: darkcyan;">Default 3</div>
+    <div class=" tab-pane fade" id="algo3" style="  background-color: clay;">Default 4</div>
+  </div>
+</div>
 <div class="side-nav fixed">
   <div class="logo text-center">
-    <span>{{config('app.name' , 'InteraKids')}}</span>
+    <a>{{config('app.name' , 'InteraKids')}}</a>
   </div>
   <nav class="sidebar side-nav fixed">
     <ul class="nav flex-column">
@@ -15,8 +46,8 @@
             <p class="display-5 text-center">{{Auth()->user()->name}}</p>
             <p class="display-5">Profissional em TI</p>
           </div>
-          <p class="display-5">Estrelas: {{Auth()->user()->stars}}</p>
-          <a class="btn btn-success nav-link text-white" href="#">Conquistas</a>
+          <p class="display-5">Estrelas:{{Auth()->user()->stars}}</p>
+          <a class="btn btn-success nav-link text-white" href="#" data-toggle="modal" data-target="#Modal-configaudio">Conquistas</a>
         </div>
       </li>
     </ul>
@@ -34,7 +65,7 @@
       </li>
       <li class="nav-item  p-3 mb-3">
         <a class=" nav-link shadow " data-toggle="tab" href="#algo2">
-        Personagens
+          Personagens
         </a>
       </li>
       <li class="nav-item  p-3 mb-3">
