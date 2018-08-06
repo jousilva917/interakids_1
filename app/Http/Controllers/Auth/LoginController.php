@@ -61,6 +61,7 @@ class LoginController extends Controller
         $user_db->email = $user->getEmail();
         $user_db->password = bcrypt('temp'.rand(1, 100000).env('APP_KEY').'temp');
         $user_db->save();
+        auth()->login($user_db);
         return redirect('/perfil');
     }
 }

@@ -8,13 +8,19 @@ class Task extends Model
 {
     protected $table = 'task';
     
+    public $timestamps = false;
+
     public function tasklog()
     {
-        $this->belongsTo('App\TaskLog');
+        return $this->belongsTo('App\TaskLog');
     }
     public static function post()
     {
-        $task = self::where('stars_required', '>', 0)->get();
+        $user_id = auth()->user()->id;
+        $task = self::join('tasklog','task.id', '=', 'tasklog.task_id')
+        ->select(['task.id','name','description','level','isle','stars_reward','stars_required'])
+        ->where('tasklog.user_id',$user_id)
+        ->where('tasklog.completed',false)->get();
 
         return $task;
     }

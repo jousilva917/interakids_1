@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use App\Task;
 use Illuminate\Support\Facades\Auth;
 use App\Notifications\RepliedtoThread;
 class HomeController extends Controller
@@ -28,6 +29,10 @@ class HomeController extends Controller
     public function explore()
     {
         return view('website.explore');
+    }
+    public function tasks(){
+        $tasks = Task::all();
+        return response()->json($tasks);
     }
     public function submit(Request $request)
     {

@@ -19,7 +19,7 @@ class AddTasklog extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('task_id')->unsigned();
             $table->foreign('task_id')->references('id')->on('task')->onDelete('cascade');
-            $table->integer('completed');
+            $table->boolean('completed')->dafault(false);
             $table->timestamps();       
         });
     }

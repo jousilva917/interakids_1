@@ -18,9 +18,9 @@ class AddTaskTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->integer('level');
+            $table->integer('isle');
             $table->integer('stars_reward');
             $table->integer('stars_required');
-            $table->timestamps();
         });
     }
 

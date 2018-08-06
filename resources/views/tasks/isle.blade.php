@@ -1,22 +1,25 @@
-@extends('layouts.perfil')
-@section('head')
-<title>{{config('app.name' , 'InteraKids')}}</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-{!! Minify::stylesheet(['/css/site/app.css', '/css/learn/sb-admin.css', '/css/learn/font-awesome.min.css'])->withFullUrl()!!} 
-{!! Minify::javascript(['/js/site/app.js'])->withFullUrl()!!} 
-@endsection
+<!DOCTYPE html>
+<html lang="pt-br">
 
-@section('perfil')
-<table class="table">
-    <tr>
-        <th>Nome</th>
-    </tr>
-    <tr>
-        @foreach($task as $t)
-    <td>{{$t->name}}</td>
-    </tr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{config('app.name', 'InteraKids')}}</title>
+    {!!Minify::stylesheet(['/css/site/app.css'])->withfullUrl()!!} 
+    {!!Minify::javascript(['/js/site/app.js'])->withfullUrl()!!}
+</head>
+
+<body>
+    @if(session('error'))
+    <div class="alert alert-danger mt-4">
+        {{session('error')}}
+    </div>
+    @endif @foreach($task as $t)
+    <form action="{{action('LearnController@task')}}" method="get">
+        <input type="hidden" name="id" value="{{$t->id}}">
+        <button class="{{auth()->user()->stars >= $t->stars_required ? 'btn btn-primary':'btn btn-danger'}}" type="submit">{{$t->name}}</button>
+    </form>
     @endforeach
-</table>
-@endsection
+</body>
+</html>
