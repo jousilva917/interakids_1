@@ -1,4 +1,7 @@
 
+
+
+
 .header {
 	position: absolute;
 	width: 100%;
@@ -49,7 +52,7 @@
 .nav-trigger span, .nav-trigger span:before, span:after {
 	width: 20px;
 	height: 2px;
-	background-color: #35475e;
+	background-color: #04295a;
 	position: absolute;
 }
 .nav-trigger span {

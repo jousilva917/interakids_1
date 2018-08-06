@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item {{Request::is('home') ? 'active': ''}}">
-                    <a class="nav-link" href="{{ action('HomeController@index') }}"> Inicio </a>
+                    <a class="nav-link" href="{{ action('HomeController@index') }}"> Início </a>
                 </li>
                 <li class="nav-item {{Request::is('explore') ? 'active': ''}}">
                     <a class="nav-link" href="{{ action('HomeController@explore') }}">Explore</a>

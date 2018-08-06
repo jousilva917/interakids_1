@@ -48,6 +48,43 @@
 
                     </div>
                 </div>
+                  
+            
+
+
+    
+        <!--<h5 class="section-title h1">Nossas metas</h5><br>-->
+    <div class-"container">
+        <div class="row">
+            <div class=" col-sm-4 col-md-4">
+                <div class="mage-flip">
+                    <p><img class=" img-fluid" src="../../images/jogos d.png" alt="card image"></p>
+                        <h4 class="card-title">Jogos</h4>
+                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                </div>
+            </div>
+                        
+       
+           
+        
+            <div class=" col-sm-4 col-md-4">
+                <div class="mage-flip">
+                    <p><img class=" img-fluid" src="../../images/metd.png"  alt="card image"></p>
+                        <h4 class="card-title">Linguagens</h4>
+                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                </div>
+            </div>
+            <div class=" col-sm-4 col-md-4">
+                <div class="mage-flip">
+                    <p><img class=" img-fluid" src="../../images/trofeu e.png" width="" alt="card image"></p>
+                        <h4 class="card-title">Missões</h4>
+                        <p class="card-text">This is basic card with image on top, title, description and button.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
                     <div class="row">
                         <div class="col-sm-12 text-center">
                             <section class="border-btn">
@@ -56,33 +93,47 @@
                         </div>
                     </div>
                 </div>
+
+
+
+        </section>
     </div>
 <section id="section-layer" class="meio">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row ">
-            <div class="col text-center">
+            <div class="col-sm-12">
                 <div class="p-5">
-                    <h1 class="display-4">As Ilhas flutuantes</h1>
-                    <p class="lead">Resolva os problemas que estão sobre as pacíficas ilhas flutuantes, aprenda lógica, complete missões, desbloqueie novos conteúdos conforme avança e salve a todos...tudo isso em somente um jogo! Jogue gratuitamente e a primeira ilha é completamente sem cadastro!  </p>
-                    <a href="#" class="btn btn-light">ESTOU DENTRO</a>
+                    <h1 class="display-4 letra font-serif">As Ilhas flutuantes</h1>
+                    <p class="">Resolva os problemas que estão sobre as pacíficas ilhas flutuantes<!--Resolva os problemas que estão sobre as pacíficas ilhas flutuantes, aprenda lógica, complete missões, desbloqueie novos conteúdos conforme avança e salve a todos...tudo isso em somente um jogo! Jogue gratuitamente e a primeira ilha é completamente sem cadastro! --> </p>
+                    <a href="#" class="btn btn-success">ESTOU DENTRO</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<div class="container-fluid" id="row-video">
+<div class="container-fluid">
     <div class="row text-center justify-content" id="row-col">
         <div class="col-sm-6 col-md-6">
             <h2 class="display-4">Mas e se?</h2>
             <p class="lead">Para qualquer duvida que possa surgir, fizemos esse pequeno vídeo que explica um pouco sobre a nossa didática e faz um pequeno tour pelo nosso site, mostrando desde as diferenças de ter e não ter uma conta até algumas fases do site; sinta-se livre para explorar todo o site! As ilhas precisam de vocês. </p>
+            
+                            <section class="border-btn">
+                                <a class="btn4"  href="#">Jogar</a>
+                                </section>
+                        
+                    
         </div>
-        <div class="col-sm-6 col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_Mbxe33BYW8" allowfullscreen></iframe>
+
+         
+
+        <div class=" col-sm-6 col-md-6">
+                <div class="mage-flip">
+                    <p><img class=" img-fluid" src="../../images/robo3.png" alt="card image"></p>
+                        
+                        </div>
             </div>
-        </div>
-    </div>
-</div>
+</div></div>
+
 <section class="gallery-block grid-gallery">
     <div class="container">
         <div class="heading">
@@ -90,17 +141,17 @@
         </div>
         <div class="row">
 
-            <div class="col-sm-4 col-md-4 item">
+            <div class="col-sm-4 col-md-4 col-lg-4 item">
                 <a class="lightbox" href="#">
                     <div class="img-fluid image scale-on-hover ilha1"></div>
                 </a>
             </div>
-            <div class="col-sm-4 col-md-4 item">
+            <div class="col-sm-4 col-md-4 col-lg-4 item">
                 <a class="lightbox" href="#">
                     <div class="img-fluid image scale-on-hover ilha2"></div>
                 </a>
             </div>
-            <div class="col-sm-4 col-md-4 item">
+            <div class="col-sm-4 col-md-4 col-lg-4 item">
                 <a class="lightbox" href="#">
                     <div class="img-fluid image scale-on-hover ilha3"></div>
                 </a>

@@ -13,7 +13,7 @@
     <form method="POST" action="{{ route('login') }}">
         @csrf
         <div class="form-log-in-with-email">
-            <div class="form-white-background">
+            <div class="form- success-background">
                 <div class="form-title-row">
                     <h1>Entrar</h1>
                 </div>
