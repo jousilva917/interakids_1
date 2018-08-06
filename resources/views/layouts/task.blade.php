@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{config('appName', 'InteraKids')}}</title>
     {!!Minify::stylesheet(['/css/site/app.css'])->withfullUrl()!!} 
-    {!!Minify::javascript(['/js/site/app.js','/blockly/blockly_compressed.js',
+    {!!Minify::javascript(['/js/site/app.js','/blockly/blockly_compressed.js','/blockly/blocks_compressed.js',
     '/blockly/javascript_compressed.js','/blockly/msg/js/pt-br.js'])->withfullUrl()!!}
     <script>
         @yield('scripts')
