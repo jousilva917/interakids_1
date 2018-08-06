@@ -93,13 +93,10 @@
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
 
 
 
         </section>
-=======
->>>>>>> eb6f73d8db58a13e579cde7fcb0edc6d11c60bdb
     </div>
 <section id="section-layer" class="meio">
     <div class="container">
@@ -119,7 +116,6 @@
         <div class="col-sm-6 col-md-6">
             <h2 class="display-4">Mas e se?</h2>
             <p class="lead">Para qualquer duvida que possa surgir, fizemos esse pequeno vídeo que explica um pouco sobre a nossa didática e faz um pequeno tour pelo nosso site, mostrando desde as diferenças de ter e não ter uma conta até algumas fases do site; sinta-se livre para explorar todo o site! As ilhas precisam de vocês. </p>
-<<<<<<< HEAD
             
                             <section class="border-btn">
                                 <a class="btn4"  href="#">Jogar</a>
@@ -135,12 +131,6 @@
                     <p><img class=" img-fluid" src="../../images/robo3.png" alt="card image"></p>
                         
                         </div>
-=======
-        </div>
-        <div class="col-sm-6 col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_Mbxe33BYW8" allowfullscreen></iframe>
->>>>>>> eb6f73d8db58a13e579cde7fcb0edc6d11c60bdb
             </div>
 </div></div>
 

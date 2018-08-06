@@ -53,7 +53,6 @@
                             </div>
                             <button type="submit" class="btn">Enviar</button>
 
-<<<<<<< HEAD
         
 
 <!--<div class="container">
@@ -69,9 +68,6 @@
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-=======
-                        </form>
->>>>>>> eb6f73d8db58a13e579cde7fcb0edc6d11c60bdb
                     </div>
                 </div>
             </div>
