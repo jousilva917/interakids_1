@@ -46,11 +46,22 @@
 			                    </form>
 		                    </div>
                         </div>
+
+                         <div class=" col-sm-6 col-md-6">
+                <div class="mage-flip">
+                    <p><img class=" img-fluid" src="../../images/correio2.png" alt="card image"></p>
+                        
+                        </div>
+            </div>
+
+
                     </div>
                 </div>
             </div>
             
         </div>
+
+        
 
 <!--<div class="container">
     <div class="row">
