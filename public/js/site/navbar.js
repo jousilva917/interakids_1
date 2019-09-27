@@ -1,6 +1,9 @@
-// SideNav Button Initialization
-$(".button-collapse").sideNav();
-// SideNav Scrollbar Initialization
-var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-Ps.initialize(sideNavScrollbar);
+$(window).on("scroll",function () {
+  if($(window).scrollTop() > 400){
+    $("nav").addClass("bg-ct");
+    $("logo").addClass("tamanho");
+   }else {
+    $("nav").removeClass("bg-ct");
+  }
+});
 

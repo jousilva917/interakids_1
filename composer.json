@@ -9,6 +9,7 @@
         "devfactory/minify": "^1.0",
         "doctrine/dbal": "^2.7",
         "fideloper/proxy": "^4.0",
+        "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "5.6.*",
         "laravel/socialite": "^3.0",
         "laravel/tinker": "^1.0"

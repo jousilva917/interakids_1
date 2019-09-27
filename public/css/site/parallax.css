@@ -1,21 +1,14 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #130d0a;
-  font-family: 'Playfair Display', serif;
-  color: #fff;
-}
+
 
 #hero {
-  height: 500px;
+  height: 590px;
   overflow: auto;
   position: relative;
 }
 
 #content {
   background-color: #ffffff;
-  height:1000px;
-
+  height:100%;
 }
  
 
@@ -28,15 +21,9 @@ body {
   position: fixed;
   z-index: -1;
 }
-
-.first-section {
-  padding: 30px 0 20px 0;
-  height;
-}
-
 .text-header {
-  font-size: 50px;
-  text-align: center;
+  font-size: 50px ;
+  text-align : center;
 }
 
 h1 {
@@ -50,34 +37,25 @@ p {
   line-height: 150%;
 }
 
-#hero, .layer {
-  min-height: 800px;
-}
-
 .layer-bg {
   background-image: url("/images/fundo_prontoR (1).png");
-  margin-top: 0px;
+
 }
 
 .layer-1 {
   background-image: url("/images/elementosfundoprontogrande.png");
-  background-position: left bottom;
-  margin-top: 10px;
 
 }
 
 .layer-2 {
-  background-image: url("/images/outrasilhasprontogrande.png");
-   margin-top: -20px;
-   
+  background-image: url("/images/outrasilhasprontogrande.png");  
+  max-width: 100%;
 }
+
 
 .layer-3 {
   background-image: url("/images/ilha1prontagrande.png");
   margin-top: -10px;
-   width: 100%;
-   height: 100%;
- 
 }
 
 .layer-4 {
@@ -85,22 +63,51 @@ p {
   margin-top: 10px;
 }
 
-
-
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 576px) {
   #hero {
     display: block;
+    height: 660px;
+    overflow: auto;
+    position: relative;
   }
 
   #hero-mobile {
     display: block;
   }
 }
-.tutorial-link {
-  color: #fff;
-  font-size: 18px;
-  text-decoration: underline;
+@media only screen and (min-width: 768px) {
+  #hero {
+    display: block;
+    height: 890px;
+    overflow: auto;
+    position: relative;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
 }
-.tutorial-link:hover {
-  color: #ede0d5;
+@media only screen and (min-width: 992px) {
+  #hero {
+    display: block;
+    height: 890px;
+    overflow: auto;
+    position: relative;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #hero {
+    display: block;
+    height: 890px;
+    overflow: auto;
+    position: relative;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
 }

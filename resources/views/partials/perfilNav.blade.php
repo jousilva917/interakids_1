@@ -1,60 +1,56 @@
-<div class="header">
-  <nav class="navbar default-layout col-md-12 col-sm-12 p-0 fixed justify-content-end">
-    <div class="navbar-menu-wrapper d-flex align-items-center">
-      <ul class="navbar-nav navbar-nav-right">
-        <li class="nav-item dropdown">
-          <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-            <i class="fa fa-bell fa-2x"></i>
-            <span class="count">{{count(Auth()->user()->unreadnotifications)}}</span>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-            <a class="dropdown-item">
-              <p class="mb-0 font-weight-normal float-left">Você tem {{count(Auth()->user()->notifications)}} novas notificações</p>
-              <span class="badge badge-pill badge-warning float-right">Ver Todos</span>
-            </a>
-            @foreach(Auth()->user()->unreadnotifications as $notification)
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item preview-item" href="#" onclick="markNotificationAsRead()">
-              <div class="preview-thumbnail">
-                <div class="preview-icon bg-success">
-                  <i class="mdi mdi-alert-circle-outline mx-0"></i>
-                </div>
-              </div>
-              <div class="preview-item-content">
-                <h6 class="preview-subject font-weight-medium text-dark">{{($notification->data['name'])}}</h6>
-                <p class="font-weight-light small-text">
-                  Entre Agora
-                </p>
-              </div>
-            </a>
-            @endforeach
-          </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="menu-open-button text-white" href="/home" style="text-decoration:none;margin-left:170px;margin-top:20px;">
+      <img src="/images/background/logo.png" width="30" height="30" class="img-fluid">
+      <h6>InteraKids</h6>
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar navbar-nav">
+        <li class="nav-item">
         </li>
-        <li class="nav-item dropdown mx-auto ">
-          <a class="nav-link " id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-            <span class="profile-text">Bom Dia, {{Auth()->user()->name}}!</span>
-            <img class="img-xs  img-fluid rounded-circle" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"
-              alt="Profile image">
-            <i class="fa fa-angle-down fa-2x"></i>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-            <a class="dropdown-item mt-2" data-toggle="modal" data-target="#Modal-configel">
-              Configuração gerais
-            </a>
-            <a class="dropdown-item" data-toggle="modal" data-target="#Modal-configaudio">
-              Configuração de audio
-            </a>
-            <a class="dropdown-item" data-toggle="modal" data-target="#Modal-contact">
-              Sobre/Contato
-            </a>
-            <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">
-              <i class="fa fa-fw fa-sign-out"></i>Sair
-            </a>
-          </div>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
         </li>
       </ul>
-      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-        <span class="icon-menu"></span>
-      </button>
     </div>
-  </nav>
+    <div style="width:150px; height:50px; margin-right: 80px;"><img id="profile_pic" class="w-100 img-fluid img-thumbnail rounded-circle" src="/storage/profile_image/{{Auth::user()->profile_image}}"></div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="menu">
+        <input type="checkbox" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+          <span class="hamburger hamburger-1"></span>
+          <span class="hamburger hamburger-2"></span>
+          <span class="hamburger hamburger-3"></span>
+        </label>
+        <a href="#" class="menu-item" data-toggle="modal" data-target="#modal_logout"><i class="fa fa-sign-out"></i></a>
+        <a href="#" class="menu-item" data-toggle="modal" data-target="#modal_report"><i class="fa fa-bug"></i></a>
+        <a href="#" class="menu-item" data-toggle="modal" data-target="#modal_historic"><i class="fa fa-star-o"></i> </a>
+        <a href="#" class="menu-item" data-toggle="modal" data-target="#modal_notify"> <i class="fa fa-bell" id="NotificationI">{{count(Auth()->user()->unreadnotifications)}}</i></a>
+        <a href="#" class="menu-item" data-toggle="modal" data-target=".bd-profileEdit-modal-lg"> <i class="fa fa-cog"></i> </a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="container">
+    <div class="row" style="margin-top:90px;">
+        <div class="col-sm-1 col-md-1 col-lg-1">
+            <img class="w-100 img-fluid" src="/images/sun.png" alt="">
+        </div>
+        <div class="col-sm-11 col-md-12 col-lg-10">
+            <img class="w-25 img-fluid" src="/images/playinterakids2.png" alt="">
+        </div>
+    </div>
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <a href="/ilhas">
+              <img class="w-1" src="/images/bunitim.png" alt="">
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <img class="w-75" src="/images/ilhafim3.png" alt="">
+          </div>
+      </div>
+  </div>
+</header>

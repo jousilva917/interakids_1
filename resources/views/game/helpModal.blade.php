@@ -1,0 +1,1 @@
+<div id="myModal" class="modal"><div class="modal-content"><div class="modal-header"><span class="close">&times;</span><h2>{{$task->name}}</h2></div><div class="modal-body"><p><img src="/storage/levelHelp/{{$task->levelHelp}}" alt="Sem ajuda :/"></p></div><div class="modal-footer"><h3>{{config('App.name', 'InteraKids')}}</h3></div></div></div>

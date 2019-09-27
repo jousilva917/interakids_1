@@ -60,6 +60,9 @@ class LoginController extends Controller
         $user_db->name = $user->getName();
         $user_db->email = $user->getEmail();
         $user_db->password = bcrypt('temp'.rand(1, 100000).env('APP_KEY').'temp');
+        $user_db->token = str_random(40);
+        $user_db->verified = true;
+        $user_db->socialLogin = true;
         $user_db->save();
         auth()->login($user_db);
         return redirect('/perfil');

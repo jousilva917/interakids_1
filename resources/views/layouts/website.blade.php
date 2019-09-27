@@ -3,9 +3,8 @@
     <head>
     @yield('head')
     </head>
-    <body id="page-principal">
+    <body>
         @include('partials.nav')
-        @include('partials.modal')
         @yield('content')
         @include('partials.footer')
     </body>

@@ -20,7 +20,7 @@ if (goog.DEBUG) {
 
 
 BlocklyGames.soy.titleSpan = function(opt_data, opt_ignored, opt_ijData) {
-  return '<span id="title">' + ((opt_ijData.html) ? '<a href="index.html?lang=' + soy.$$escapeHtml(opt_ijData.lang) + '">' : '<a href="./?lang=' + soy.$$escapeHtml(opt_ijData.lang) + '">') + 'Blockly Games</a> : ' + soy.$$escapeHtml(opt_data.appName) + '</span>';
+  return '<span id="title"></span>';
 };
 if (goog.DEBUG) {
   BlocklyGames.soy.titleSpan.soyTemplateName = 'BlocklyGames.soy.titleSpan';

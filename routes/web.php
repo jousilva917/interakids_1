@@ -1,32 +1,40 @@
 <?php
 
-
-/*Route::group(['namespace' => 'Home'], function () {
-    // Controllers Within The "App\Http\Controllers\Home" Namespace
-        return redirect()->action('HomeController@index');
-});*/
 //HomeController
 Route::get('/', function(){
     return redirect()->action('HomeController@index');
 });
 Route::get('/home', 'HomeController@index');
 Route::get('/sobre', 'HomeController@sobre');
-Route::get('/contato', 'HomeController@contact');
-Route::post('/submit', 'HomeController@submit');
-Route::post('/picture','HomeController@picture');
-Route::get('/task', 'HomeController@tasks');
-//LearnController
 Route::get('/explore', 'HomeController@explore');
-Route::get('/isle', 'LearnController@isle');
-Route::get('task', 'LearnController@task');
-Route::post('/task/learn', 'LearnController@taskComplete');
-Route::get('/pegs', 'LearnController@pegs');
+Route::get('/contato', 'HomeController@contact');
+
+//ProfileController
+Route::get('/perfil', 'ProfileController@perfil')->name('perfil');
+Route::post('/perfil/update', 'ProfileController@updateProfile')->name('updateProfile');
+Route::post('/perfil/picture', 'ProfileController@updatePicture')->name('updatePic');
+Route::get('/picture/remove', 'ProfileController@removePicture');
+Route::get('/historico', 'ProfileController@history');
+Route::post('/report', 'ProfileController@report');
+//GameController
+Route::get('/isle', 'GameController@taskIndex');
+Route::get('/ilhas', 'GameController@isles')->middleware('verified');
+Route::get('Ilha', 'GameController@task');
+Route::post('/task/learn', 'GameController@taskComplete');
 Route::get('/markAsRead', function(){
         auth()->user()->unreadnotifications->markAsRead();
 });
+//ContactController
+Route::post('/submit', 'ContactController@contact');
 //Sistema de cadastro
 Auth::routes();
-Route::get('/perfil', 'LearnController@perfil')->name('perfil');
-//Sistema de login com google,facebook...
+//Sistema de login com google
 Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
+//Verifica o usuário
+Route::get('user/verify/{token}', 'GameController@verifyUser');
+
+//mensagens de erro
+Route::get('/error', function(){
+    return view('error');
+});

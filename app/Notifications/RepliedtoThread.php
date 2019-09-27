@@ -12,14 +12,16 @@ class RepliedToThread extends Notification
 {
     use Queueable;
 
+    public $name;
+
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name)
     {
-
+        $this->name = $name;
     }
 
     /**
@@ -42,7 +44,7 @@ class RepliedToThread extends Notification
     public function toDatabase($notifiable)
     {   
         return [
-            'name'=> auth()->user()->name
+            'level'=> $this->name     
         ];
     }
     /**

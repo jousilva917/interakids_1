@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Notifications\Notifiable;
+use App\Mail\ResetPassword as ResetPasswordNotification;
+use Mail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -15,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'token'
     ];
 
     /**
@@ -31,13 +33,23 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\TaskLog');
     }
+    
     public function charlog()
     {
         return $this->hasMany('App\Charlog');
     }
-    public function gain_stars($stars)
+
+    public function completed_tasks()
     {
-        $this->stars += $stars;
+        $this->tasksCompleted += 1;
+        $this->stars += 3;
         $this->save();
     }
+
+    public function sendPasswordResetNotification($token)
+    {        
+        //$this->notify(new ResetPasswordNotification($token));
+        Mail::to($this->email)->send(new ResetPasswordNotification($token)); 
+    }
+
 }

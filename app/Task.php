@@ -14,14 +14,11 @@ class Task extends Model
     {
         return $this->belongsTo('App\TaskLog');
     }
-    public static function post()
-    {
-        $user_id = auth()->user()->id;
-        $task = self::join('tasklog','task.id', '=', 'tasklog.task_id')
-        ->select(['task.id','name','description','level','isle','stars_reward','stars_required'])
-        ->where('tasklog.user_id',$user_id)
-        ->where('tasklog.completed',false)->get();
 
+    public static function available_tasks()
+    {
+        $task = self::join('tasklog', 'task.id', '=', 'tasklog.task_id')
+        ->where('completed', false)->get();
         return $task;
     }
 }

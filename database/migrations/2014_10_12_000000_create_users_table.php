@@ -18,9 +18,12 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('token')->unique();
+            $table->boolean('verified')->default(true);
             $table->integer('stars')->default(0);
             $table->string('profile_image')->default('noimage.png');
-            $table->integer('isle')->default(1);
+            $table->Integer('tasksCompleted')->default(0);
+            $table->boolean('socialLogin')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
